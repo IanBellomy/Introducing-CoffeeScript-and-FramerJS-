@@ -110,7 +110,7 @@ print "2"*2
 # There are two basic places: long term (hard drive) and short term (RAM).
 # Data in long term storage will remain even if the program stops. It is a topic for another day.
 # Short term storage disappears after the program stops. 
-# Short term storage is both easy and essential. It works the same in almost every language.
+# Short term storage is both easy and essential. It works almost the same way in almost every language.
 # In CoffeeScript, this is how it's done:
 
 myData = "SomeData"
