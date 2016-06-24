@@ -178,15 +178,13 @@ print b
 # In addition to basic data types there are complex data types, or data structures.
 # The most common type is an "Object". It is a kind of "Dictionary" made of word:Data pairs
 # You can think of it as a collection of variables that are all attached to a larger variable.
-# But it's much more common to use a shorthand; two curly brackets.
 
 pet = {}			# Here, the curly brackets are literally an Object, or, an "Object Literal"
-pet.name = "Sam" 	# Here, we create a variable, 'name', on the object.
+pet.name = "Sam" 	# Here, we create a variable, 'name', "on the object".
 pet.type = "Cat" 	# A variable on an object is called a "property"
-					# the Object.Property notation is called "dot syntax"
-					# It is common in many languages you might encounter. 
+					# the Object.Property notation is called "dot syntax".
+					# It is common in many languages. 
 					
-
 print pet.name 		# We can use properties just like variables. Reading and writing to them.
 print pet.type
 
@@ -200,7 +198,7 @@ print pet
 # This is not uncommon.
 
 ######################################## P
-# You can create nested structures
+# You can create nested object structures.
 
 pet1 = {name:"Sam Jr."}
 pet1.parent = {name:"Sam Sr."}
@@ -211,13 +209,14 @@ print pet1.parent.parent.name
 
 
 ######################################## P
-# CoffeeScript has a commonly used shortcut for creating objects.
+# CoffeeScript has a shorthand for creating objects.
 # Instead of using curly brackets and commas, property:value pairs can go on a new line, with a tab-indent.
+# This shorthand is commonly used in CoffeeScript code. 
 
 pet = 
-	name:"Sam"  # the one tab indentation is important. CofeeScript uses the white space to understand what is going on.
+	name:"Sam"  # The one tab indentation is important. CofeeScript uses the white space to understand what is going on.
 	type:"Cat"	# CofeeScript has what's called "significant whitespace". 		
-	age:3 		# This is not the most common in languages. But it is not unheard of.  
+	age:3 		# This is not the most common in different languages. But it is not unheard of.  
 	parent:		
 			name: "Sam Sr."		# Here we begin a new, nested object. 
 
