@@ -120,8 +120,8 @@ _A2d3f_ = "Bad Name"
 herp-derp = 1
 
 # The word on the left is called a "variable", the equal sign is called the "assignment operator".
-# Variables may be named what ever you like! So long as the name contains no spaces or math operators and doesn't start with a number.
-# The naming convention for variables in most languages is "camelCase". 
+# Variables may be named whatever you like! So long as the name contains no spaces or math operators and doesn't start with a number.
+# The naming convention for variables in most languages is "camelCase". First word lowercase, next words uppercase. 
 # Note: For those who know JavaScript, 'var' is not allowed in CoffeeScript. 
 
 
