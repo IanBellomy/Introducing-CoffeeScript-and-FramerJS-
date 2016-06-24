@@ -5,22 +5,24 @@
 	
 	These programs introduce fundemental concepts about: 
 		
-		• Basic datatypes in JavaScript and CoffeeScript.		
-		• Basic operations.
+		• Basic datatypes.
+		• Operations.
 		• Assignment and Variables
-		• The complex datatypes Arrays and Objects		
-		• Functions
+		• Objects (and references)
+		• Functions		
 
 	To use this document:
 
 		1. Go to http://prototyp.in	
 		2. Type out, by hand, each program, by itself.
 
-		(You can ignore any lines with instructions or commentary.)
+			(You can ignore any lines with instructions or commentary.)
 
 		3. Make notes where anything is the least bit confusing. Experiment with specific example to explore how it works.
 
 	These were originally created for use in the classroom where an instructor can answer questions as needed.
+
+	— Ian Bellomy, 2016
 
 ###
 
@@ -171,97 +173,41 @@ print b
 # Note: There is a huge exception to this rule that we will discuss later.
 
 
+
 ######################################## P
 # In addition to basic data types there are complex data types, or data structures.
-# The most common is an "Array". It is a kind of "collection".
-# Arrays and other kinds of complex data structures can be created with the keyword "new", followed by the data type.
-# For example: ages = new Array
-# However, Arrays are so common that almost every language has a shorthand.
-# In JavaScript and CoffeeScript, the shorthand is: []
-
-ages = [] 	# Here, the brackets are literally an array, or, an "Array Literal"
-print ages
-
-
-######################################## P
-# Array literals allow you to create and populate an Array at once.
-
-ages = [11,22,33]
-print ages
-
-# Each slot in an array is called an "index".
-# Individual indexes can be accessed using "Array notation" 
-# However, in almost every language, the count starts at 0, not 1
-
-print ages[0] 	# The first index
-print ages[1]	# The second index
-print ages[2]	# The third index
-
-# Warning! Trying to access indexes that don't exist will produce garbage.
-
-print ages[3]	# uh oh
-print ages[-1]	# uh oh
-
-
-######################################## P
-# After creating an array, just think of  ARRAY_NAME[NUMBER] as a variable. 
-# (In JavaScript and CoffeeScript, you can add data to indexes that don't exist yet.)
-
-ages = []
-ages[0] = 11
-ages[1] = 22
-ages[2] = 33
-print ages
-print ages[0]
-
-
-
-######################################## P
-# Arrays are made up of Number:Data pairs.
-# We can also make a collection with Word:Data pairs.
-# This kind of collection is normally called a Dictionary.
-# In JavaScript and CoffeeScript we call it an "Object"
-# You can crate objects with the keyword "new",  
-#
-#		pet = new Object
-#
+# The most common type is an "Object". It is a kind of "Dictionary" made of word:Data pairs
+# You can think of it as a collection of variables that are all attached to a larger variable.
 # But it's much more common to use a shorthand; two curly brackets.
 
-pet = {}	# Here, the curly brackets are literally an Object, or, an "Object Literal"
-pet["name"] = "Sam"
-pet["type"] = "Cat"
+pet = {}			# Here, the curly brackets are literally an Object, or, an "Object Literal"
+pet.name = "Sam" 	# Here, we create a variable, 'name', on the object.
+pet.type = "Cat" 	# A variable on an object is called a "property"
+					# the Object.Property notation is called "dot syntax"
+					# It is common in many languages you might encounter. 
+					
 
-print pet
-
-
-######################################## P
-# You can define properties in the Object Literal
-# This is common.
-
-pet = {name:"Sam",type:"Cat"}
-print pet
-
-
-######################################## P
-# We can access object properties using "dot syntax". 
-# This is common.
-
-pet = {name:"Sam",type:"Cat"}
-
-print pet.name
+print pet.name 		# We can use properties just like variables. Reading and writing to them.
 print pet.type
-print pet.age
 
 
+######################################## P
+# You can define an object's properties in the Object Literal like this:
 
-######################################## P 
-# Properties can be modified or added later.
-
-pet = {name:"Sam"}
-pet.name = "Bill"
-pet.type = "Cat"
-
+pet = {name:"Sam",type:"Cat"}
 print pet
+
+# This is not uncommon.
+
+######################################## P
+# You can create nested structures
+
+pet1 = {name:"Sam Jr."}
+pet1.parent = {name:"Sam Sr."}
+pet1.parent.parent = {name:"Ol papa Sam"}
+
+print pet1.parent.name
+print pet1.parent.parent.name
 
 
 ######################################## P
@@ -272,41 +218,13 @@ pet =
 	name:"Sam"  # the one tab indentation is important. CofeeScript uses the white space to understand what is going on.
 	type:"Cat"	# CofeeScript has what's called "significant whitespace". 		
 	age:3 		# This is not the most common in languages. But it is not unheard of.  
-
+	parent:		
+			name: "Sam Sr."		# Here we begin a new, nested object. 
 
 print pet.name
 print pet.type
 print pet.age
-
-
-
-######################################## P
-# Here's an example complex structure made out of Objects and Arrays
-
-pet = 
-	name:"Same"
-	colors:["Orange","White"]
-	home:
-		address:"555 straight street"
-		phone:"555-5555"
-
-
-print pet.colors[0]
-print pet.home.phone
-
-
-######################################## P
-# Surprise! Arrays are actually a kind of Object and can have properties AND indexes!
-# They even come with a built in helper property called "length" 
-
-numbers = [10,11,12]
-print numbers.length 
-
-# The length property is special. If you change it directly, there will be consequences!
-
-print numbers
-numbers.length = 1
-print numbers
+print pet.parent.name
 
 
 ######################################## P

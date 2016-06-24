@@ -12,6 +12,8 @@
 		a = 100		
 		print a 	# 100		
 
+	
+	— Ian Bellomy, 2016
 
 ###
 
@@ -20,29 +22,10 @@
 print snakes	# 13
 
 
-######################################## Q 
-
-print years  	# [100,200,300]
-
-
-######################################## Q 
-
-print arr[3]  	# 333
-
 
 ######################################## Q 
 
 print jonSnow.knowledge  	#  "nothing"
-
-
-######################################## Q 
-
-print cat.parents[0]  	#  "mittens"
-
-
-######################################## Q 
-
-print lions[3].color  	# "green"
 
 
 ######################################## Q 
@@ -66,7 +49,7 @@ bug.fly()				# "Bzzz"
 bug.die()				# "..."
 
 
-######################################## Q  [Ok, this is probably hard.]
+######################################## Q  [Can you do this without creating another variable?]
 
 bug.fly()				# "Bzzz"
 bug.die()				# "..."

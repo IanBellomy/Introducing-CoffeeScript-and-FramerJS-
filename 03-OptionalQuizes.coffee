@@ -1,8 +1,8 @@
 ###
 
-
 	The following quizes are optional.	
 
+	— Ian Bellomy, 2016
 
 ###
 ######################## Q 
