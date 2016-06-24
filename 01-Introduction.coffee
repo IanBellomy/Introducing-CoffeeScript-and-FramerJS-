@@ -364,7 +364,7 @@ bake = (ingredient)->
 	results = ingredient + " pie"
 	return results
 
-print bake "apple"  # Translates to 'print(bake("apples"))'
+print bake "apple"  # Translates to 'print(bake("apple"))'
 
 
 ######################################## P
