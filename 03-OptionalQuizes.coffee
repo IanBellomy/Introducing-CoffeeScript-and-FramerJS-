@@ -77,9 +77,3 @@ brokenCountDown 4	# 4
 
 
 
-######################## Q
-
-print arr  				# [1,11,111]
-addItemToArray arr, 1111				
-print arr  				# [1,11,111,1111]
-
