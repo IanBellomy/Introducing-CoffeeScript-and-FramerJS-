@@ -3,9 +3,9 @@
 	What follows are tiny CoffeeScript programs. 
 	Each program is separated by: ######################################## P	
 	
-	These programs introduce fundemental concepts about: 
+	These programs introduce fundamental concepts about: 
 		
-		• Basic datatypes.
+		• Primitive datatypes.
 		• Operations.
 		• Assignment and Variables
 		• Objects (and references)
@@ -77,8 +77,8 @@ print 10/10
 
 ######################################## P
 # Data comes in different types, or "data types".
-# Some data types are "basic" and are built into the language.
-# CoffeeScript/Javascript has a few basic data types:
+# Some data types are "primitive" and are built into the language.
+# CoffeeScript/Javascript has a few primitive data types:
 
 # A "String" of characters.
 print "1,000.0"   
@@ -148,7 +148,7 @@ b = a+a+a  		# This becomes 'b = 2+2+2' which becomes 'b = 6'
 print b + b 	# 'print 6+6' becomes 'print 12'
 
 ######################################## P
-# When basic data is assigned to a variable, the variable's old data is overwritten.
+# When primitive data is assigned to a variable, the variable's old data is overwritten.
 
 a = 1
 a = 2 		# The 1 in memory is overwritten with the number 2.
@@ -175,7 +175,7 @@ print b
 
 
 ######################################## P
-# In addition to basic data types there are complex data types, or data structures.
+# In addition to primitive data types there are complex data types, or data structures.
 # The most common type is an "Object". It is a kind of "Dictionary" made of word:Data pairs
 # You can think of it as a collection of variables that are all attached to a larger variable.
 
@@ -227,12 +227,12 @@ print pet.parent.name
 
 
 ######################################## P
-# Assigning Objects to variables is DIFFERENT from assigning basic data to variables.
+# Assigning Objects to variables is DIFFERENT from assigning primitive data to variables.
 # The Object is stored in it's own memory area. 
 # When an Object is assigned to a variable, the variable "point to" this memory.
 # This means multiple variables can "point to" the same Object. 
 # In such a case, modifying one variable's data can affect the other, because the data is the same.
-# Again, this does not happen with basic data.
+# Again, this does not happen with primitive data.
 
 clark = {power:"flight"}
 superman = clark
@@ -243,7 +243,7 @@ print clark.weakness
 
 
 ######################################## P
-# If we assign basic data to a variable that was pointing to an Object, the object data will NOT be overwritten.
+# If we assign primitive data to a variable that was pointing to an Object, the object data will NOT be overwritten.
 # The variable will stop pointing to the Object, and will be allotted its own memory like normal.
 
 clark = {power:"flight"}
@@ -335,7 +335,7 @@ echo "Hello" , "Sam"
 
 ######################################## P
 # Some functions, when called, turn into, or "return", data.
-# For example, the built in Number(DATA) function accepts basic data, and returns a number.
+# For example, the built in Number(DATA) function accepts primitive data, and returns a number.
 
 a = Number("2")  # This becomes a = 2
 print a+a 	 	 # This becomes  print 2+2
