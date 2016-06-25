@@ -76,7 +76,7 @@ box = new Layer
 backLayer.on "mousedown", (event)->
 	box.midX = event.clientX 	# A mouse event of any kind will include information about the mouse location.
 	box.midY = event.clientY	# clientX and clientY is the x and y location of the cursor in the main viewing area. 
-								# Layer.midX and Layer.midY are the cooridnates of the middle of the layer.
+					# Layer.midX and Layer.midY are the coordinates of the middle of the layer.
 
 
 
