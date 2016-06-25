@@ -12,7 +12,7 @@
 # A class is like a template for an Object.
 
 class Cat			# Define a category of Objects called Cat
-	hairballs:10	# All Cat objects will have hairball property
+	hairballs:10		# All Cat objects will have hairball property
 	hork:->			# All Cat objects will have a hork() method
 		print "HORK"
 	
