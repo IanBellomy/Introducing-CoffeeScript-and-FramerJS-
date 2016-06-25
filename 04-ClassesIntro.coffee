@@ -53,7 +53,7 @@ class Robot
 		@name = givenName
 		
 
-r1 = new Robot("Johnny")
+r1 = new Robot "Johnny"  #Note that we can ommit the parenthesis like with normal function calls. 
 print r1.name
 
 
