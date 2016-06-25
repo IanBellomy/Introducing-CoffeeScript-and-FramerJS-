@@ -30,8 +30,9 @@ print hobbes.hairballs
 # Answer: Shinanigans. Just roll with it. 
 
 ########################
-# Classes can have a special 'constructor' method.
+# Classes inCoffeeScript can have a special 'constructor' method.
 # This method will be called, automatically, when a new instance is created.
+# Other langauges often use an init function to similar ends.  
 
 class Robot			
 	constructor:->			
