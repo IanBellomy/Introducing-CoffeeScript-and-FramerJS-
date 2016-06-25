@@ -53,7 +53,7 @@ class Robot
 		@name = givenName
 		
 
-r1 = new Robot()
+r1 = new Robot("Johnny")
 print r1.name
 
 
