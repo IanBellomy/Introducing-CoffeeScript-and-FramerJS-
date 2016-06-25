@@ -28,7 +28,7 @@
 
 ######################################## P
 # Some words are like magic spells. 
-# We cast the spell by using a keyword, followed by parenthesis and a semi-colon
+# We cast the spell by using a keyword, followed by parenthesis and a semi-colon.
 # In programming we call spells "functions".
 # Casting them is called "calling" them.
 # Below, we "call" the "function" print. 
