@@ -368,17 +368,18 @@ print bake "apple"  # Translates to 'print(bake("apple"))'
 
 
 ######################################## P
-# In CoffeeScript, a custom function will always return a value.
-# By default, a function returns whatever data is on the last line.
+# In CoffeeScript (and JavaScript), a custom function will always return a value.
+# In CoffeeScript, by default, a function returns whatever data is on the last line.
 
 bake = (ingredient)->  
 	ingredient + " pie"
 	
 print bake "apple" 
 
+# Tech Note: In JavaScript, if no value is explicitly returned using 'retun', the function returns the special value 'undefined'.
 
 ######################################## P
-# A function can also be assigned to an Object property.
+# A function can also be assigned to an object property.
 # When a function belongs to an object like this, it is called a "method"
 
 cat = {}
@@ -400,7 +401,7 @@ cat.eat "kibbles"
 
 
 ######################################## P
-# Better to use CoffeeScript's shortcut
+# Better to use CoffeeScript's shortcut.
 
 cat =
 	eat:(food)->  
@@ -411,7 +412,7 @@ cat.eat "kibbles"
 
 ######################################## P
 # In any language, in a method, you can refer to the Object that the method belongs to.
-# In JavaScript and CoffeeScript, we use the keyword 'this'
+# In JavaScript and CoffeeScript, we use the keyword 'this'.
 
 cat = 
 	hairballs:10
@@ -430,7 +431,7 @@ print cat.hairballs
 
 
 ######################################## P
-# In CoffeeScript, "this." can be replaced with "@"
+# In CoffeeScript, "this." can be replaced with "@".
 # The shortcut is very common in CoffeeScript code.
 
 cat = 
@@ -463,9 +464,9 @@ print Math.random() 	# Returns a number between 0 and 1
 ######################################## Note
 ######################################## 
 #
-# The print function is part of the FramerJS library
-# Normally, you'll want to use console.log()
-# Everything else in this document works anywhere you use CoffeeScript
+# The print function is part of the FramerJS library.
+# Normally, you'll want to use console.log() .
+# Everything else in this document works anywhere you use CoffeeScript.
 #
 # End!
 #
