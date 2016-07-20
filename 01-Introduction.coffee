@@ -117,7 +117,7 @@ myData = "SomeData"
 amIReallyAProgram = true
 VALUE_FOR_PI = 3.141598
 _A2d3f_ = "Bad Name" 
-herp-derp = 1
+herp_derp = 1
 
 # The word on the left is called a "variable", the equal sign is called the "assignment operator".
 # Variables may be named whatever you like! So long as the name contains no spaces or math operators and doesn't start with a number.
