@@ -1,11 +1,11 @@
 ## Materials for Learning / Teaching CoffeeScript and FramerJS
 
-These materials walk through fundemental programming concepts using CoffeeScript and FramerJS. 
+These materials walk through fundamental programming concepts using CoffeeScript and FramerJS. 
 Each file has further instructions.
 
 The goals of these materials are:
 
-- *Solid Foundations*. Learning exactly what the code means is more tedious and dry in the beginning, but prevents hair pulling and unnecessary frustration later. A solid foundation allows students/designers to spend more time using the langauge to explore ideas and make decisions, and less time trying to make things compile. I assume that my students know nothing and begin at the beginning. 
+- *Solid Foundations*. Learning exactly what the code means is more tedious and dry in the beginning, but prevents hair pulling and unnecessary frustration later. A solid foundation allows students/designers to spend more time using the language to explore ideas and make decisions, and less time trying to make things compile. I assume that my students know nothing and begin at the beginning. 
 
 - *Space to Run*. Most classes have a range of skills. While I start at the beginning, I go deeper than necessary in some cases so that experienced students can sharpen their teeth too. Having students go deeper then necessary can also help reinforce the simpler and more core concepts.
 
