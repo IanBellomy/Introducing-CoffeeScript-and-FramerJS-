@@ -1,6 +1,6 @@
 ## Materials for Learning / Teaching CoffeeScript and FramerJS
 
-These materials walk through fundemental programming concepts using CoffeeScript. 
+These materials walk through fundemental programming concepts using CoffeeScript and FramerJS. 
 Each file has further instructions.
 
 The goals of these materials are:
@@ -9,3 +9,5 @@ The goals of these materials are:
 
 - *Clarify Concepts vs. Syntax* (Where Possible). I assume that my students know nothing about programming. I try to note when an idiom is specific to CoffeeScript, JavaScript and CoffeeScript, or to programming langauges in general.
 
+
+I've _just_ finished using this specific material for the first time so there's plenty of rough edges.
