@@ -1,6 +1,6 @@
 ###
 
-	What follows are a set of small quizes.
+	What follows are a set of small quizzes.
 	Each is separated by: ######################################## Q
 	Each includes a 'test' statement like this:
 

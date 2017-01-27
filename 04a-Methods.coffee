@@ -30,12 +30,12 @@ cat.eat "kibbles"
 
 
 ######################################## P
-# You can also define a method using Coffeescript's Object Literal Shorthand.
+# You can also define a method using CoffeeScript's Object Literal Shorthand.
 
-cat = 				# variable decleration 
+cat = 				# variable declaration 
 	name:"mittens"	# property, and the beginning of the object literal
 	age:10			# property
-	eat:(food)->  	# method decleration
+	eat:(food)->  	# method declaration
 		print("I pooped ")+ food	# method body
 
 print cat.name

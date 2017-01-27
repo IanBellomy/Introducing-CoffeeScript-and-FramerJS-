@@ -86,7 +86,7 @@ print(pet.parent.name)
 # The exact tab number of tab-indents are important
 # Instead of using curly brackets and commas, 'property:value' pairs can go on a new line, with a tab-indent.
 
-pet = 				# variable decleration and assignment, the line return indicates 'start new object'
+pet = 				# variable declaration and assignment, the line return indicates 'start new object'
 	name:"Sam"  	# a property value pair, and the beginning of the object
 	type:"Cat"		# another property value pair. It belongs to the same object
 	age:3 			# another
@@ -139,7 +139,7 @@ print(
 # This program is EXACTLY the same as the previous program
 
 ######################################## P
-# In Cofeescript, it is very common to use function call shorthand AND Object Literal Shorthand together
+# In CofeeScript, it is very common to use function call shorthand AND Object Literal Shorthand together
 
 print					# The line return and tab indicate new object literal 
 	name:"Mike Hat"		# Because there is an argument, the print function needs no parenthesis.
@@ -149,7 +149,7 @@ print					# The line return and tab indicate new object literal
 # This program is EXACTLY the same as the previous two programs
 # Yes, it may seem weird that there are three ways of doing the same thing.
 # Think about it like this...
-# Coffeescript programmers really just uses the third approach, but the reason that approach exists
+# CoffeeScript programmers really just uses the third approach, but the reason that approach exists
 # is because of the earlier ways of doing things. 
 
 
@@ -158,7 +158,7 @@ print					# The line return and tab indicate new object literal
 ######################################## 
 
 ######################################## P
-# Framer and Javascript come with many built in variables.
+# Framer and JavaScript come with many built in variables.
 # They are often organized into objects.
 # In most cases, you can not put data in them, you can only read their values.
 # Here are two of the more useful ones. 
@@ -200,7 +200,7 @@ print(superman)
 
 ######################################## P
 # If we assign primitive data to a variable that has REFERENCE, 
-# the REFERENCE is overwritten, NOT the object data being refered to.
+# the REFERENCE is overwritten, NOT the object data being referred to.
 # The DATA will still exist in memory,
 # and the variable will have its own memory like normal.
 
@@ -225,11 +225,12 @@ holyGrail = "Lost to us"
 
 print(holyGrail)
 
-# The original object is still in memory, even though we can't get to it.
+# The {type:"cup"} object is still in memory, even though we can't access it!
 # At this point, it's up to the computer to find and remove this data so we don't run out of memory!
-# This is called "garbage collection".
-# It is built into the applications that run Javascript/Coffeescript
-# Many languages/environments have different ways of dealing with this topic.
+# This find and remove is called "garbage collection".
+# It is built into the environments that run Javascript/Coffeescript. 
+# However, other languages require you to manage memory more explicitly.
+
 
 
 ######################################## 

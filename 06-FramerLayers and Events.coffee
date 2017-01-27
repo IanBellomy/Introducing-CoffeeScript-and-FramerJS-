@@ -10,7 +10,10 @@
 
 ######################## P
 # Layers are a powerful class provided by the FramerJS library.
-# When we create a Layer, the framework takes care of presenting visuals on the screen.
+# When we create a Layer, we create a special object with properties for 
+# location, size, backgroundColor, etc.
+# The framework takes care of presenting visuals on the screen 
+# that match these values.
 
 # We create new layers like this.
 layer1 = new Layer
@@ -35,11 +38,26 @@ layer2.backgroundColor = "rgb(255,0,0)"
 
 
 ######################## P
+# We can set many of the layer's properties right when we create it
+# by passing an object with the settings we'd like
+
+layer1 = new Layer({x:100,y:100,backgroundColor:"black",width:10,height:10})
+
+# It is very common to use shorthand when constructing a layer in this way
+layer2 = new Layer
+	x:10
+	y:100
+	backgroundColor:"orange"
+	width:20
+	height:20
+
+
+######################## P
 # Layers "generate events" when something like a click happens.
 # We write code the responds to these events.
 # Specifically we "add" functions that "listen" for these events. 
 # Functions that are used to respond to events are called "even handlers" or "handlers"
-# This term refers to how the progammer is _using_ the function. 
+# This term refers to how the programmer is _using_ the function. 
 # By all other accounts it is just a plain old function.
 # This "event handling" pattern is a VERY common pattern in interface development. 
 
@@ -128,37 +146,4 @@ box = new Layer
 bg.onMouseDown (eventData)->
 	box.midX = eventData.offsetX
 	box.midY = eventData.offsetY	
-
-
-
-######################## P
-# It's not uncommon for a function to use a String for an important detail.
-# However, this can create a problem.
-# If the String has a typo, for example, "mousdown", your event will never be called and there will be no error. 
-# The program will run, but will not work as expected, and you'll have no indication as to why.
-# To get around this, it is common practice to create variables that hold onto these words. 
-# If you misstype the variable, an error will occur at that specific place in the code, and you will be notified. 
-# This is preferable to the program failing silently. 
-# Personally, I tend to flip back and forth because: 
-# 1. The autocomplete features for CoffeeScript Editors aren't that good really... 
-# 2. The more you type, the more chance of a mistake in the first palce.
-# 3. Really, this idea works best with enums, a structure that JavaScript/CoffeeScript doesn't support. 
-
-
-# Properties that store strings: 
-print Events.MouseOver
-print Events.MouseOut
-print Events.MouseDown
-print Events.MouseUp
-print Events.DoubleClick
-
-layerA = new Layer
-
-layerA.on "mousdown", ->		# Typo, but no error. 
-	@x = 50
-
-layerA.on Events.MousUp, ->		# Typo, with a potentially time saving error message. 
-	@y = 50
-
-
 

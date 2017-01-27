@@ -20,7 +20,7 @@ class Cat			# Define a category of Objects called Cat
 hobbes = new Cat()
 
 
-# An instace has all the methods and properties defined by its class. 
+# An instance has all the methods and properties defined by its class. 
 hobbes.hork()
 hobbes.hork()
 print hobbes.hairballs 
@@ -41,7 +41,7 @@ class Robot
 r = new Robot() 
 
 ########################
-# Construtor methods can accept arguments.
+# Constructor methods can accept arguments.
 # This can be a handy way to set some options when creating an instance.
 
 class Robot			
@@ -53,7 +53,7 @@ class Robot
 							# This allows us to refer to the object being made when it is being made. 
 		
 
-r = new Robot "Johnny"  # Note that we can ommit the parenthesis like with normal function calls. 
+r = new Robot "Johnny"  # Note that we can omit the parenthesis like with normal function calls. 
 print r.name
 
 

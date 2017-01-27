@@ -5,8 +5,9 @@
 	
 	The programs in this document introduce: 
 		
+		• Basic commands.
+		• Basic operators.
 		• Primitive datatypes.
-		• Operations.
 		• Assignment and Variables
 		
 	To use this document:
@@ -20,7 +21,7 @@
 
 	These were originally created for use in the classroom where an instructor can answer questions as needed.
 
-	— Ian Bellomy, 2016
+	— Ian Bellomy, 2017
 
 ###
 
@@ -46,6 +47,9 @@ explode()
 print(100) 	
 print(100,200,300)
 
+# When we call functions with arguments we sometimes say that we're: "passing" whatever-data to whatever-function
+# Above, we're passing 100 to the print function. Next we 'pass three numbers to print'.
+
 
 ######################################## P
 # In CoffeeScript, if we "call" a function "with arguments", we can leave out the parenthesis.
@@ -54,21 +58,20 @@ print(100,200,300)
 print 100
 print 100,200,300
 
-# The spaces between the function name and the argument are meaningful symbols to Coffeescript, just like '=' or '(' or ","
+# The spaces between the function name and the argument are meaningful symbols to CoffeeScript, just like '=' or '(' or ","
 # This is called "significant whitespace". 
 # Python is another common language that uses significant whitespace.
 # Most languages are NOT like this though (C,C++,C#,Java,Javascript,Swift,Objective-C)
 # Significant whitespace is a polarizing paradigm among developers. 
 
-
 ######################################## P
 # If we ever call a function WITHOUT arguments, we MUST use '()'
 
-print() 	# Function call.
-print		# Nothing at all!
-print "ok"	# Function call with arguments.
+print() 	# Function call. Ok.
+print		# Nothing at all! No good.
+print "ok"	# Function call with arguments. Ok.
 
-# We will use parenthesis for now for clarity
+# We will use parenthesis for this section.
 
 ######################################## P
 # Computers do math.
@@ -179,7 +182,7 @@ print(a)
 print(b)
 
 # Note: This behavior holds for almost any programming language an interaction designer will encounter.
-# Note: There is a huge exception to this rule that we will discuss later.
+# Note: There is a huge exception to this rule that we will discuss in the section on Objects.
 
 
 ######################################## 

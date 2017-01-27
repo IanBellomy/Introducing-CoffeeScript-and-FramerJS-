@@ -1,6 +1,6 @@
 ###
 
-	The following quizes are optional.	
+	The following quizzes are optional.	
 
 	— Ian Bellomy, 2016
 

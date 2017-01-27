@@ -11,21 +11,29 @@
 ######################################## P
 # We can write our own functions.
 # In CoffeeScropt, a function or "function literal" looks like this:
--> print("clapping")
+
+-> #FUNCTION CODE HERE
 
 # This is also called a "function declaration"
 # The "->" means "The code that follows is code for a function"
-# Our function will not run until it "called" though. 
+# This above function has no code.
+
+######################################## P
+# Here the code 'print("I ran!")' is inside the function.
+# Function code is not run immeidately. It is set aside to run LATER
+
+-> print("I ran!")
+
 
 
 ######################################## P
-# To call our function. We must store it in a variable.
-# We can then call it like any other function.
+# If we want to USE our function, we must store it in a variable.
+# We can us the variable name to call the function.
 
-applaud = -> print("clapping")
-applaud()
-applaud()
-applaud()
+applaud = -> print("clapping") # Store this function in the variable 'applaud'
+applaud() # Call the custom function
+applaud() # Call the custom function again
+applaud() # ...and again
 
 
 ######################################## P
@@ -37,18 +45,18 @@ applaud()						# Code not executed because program quit
 
 ######################################## P
 # When you declare a function, you are telling the computer to set those instructions aside for LATER.
-# A function declaration DESCRIBES how the function works, it does not run the code.
+# A function declaration DESCRIBES the function, it does not run the function code.
 
 print("One")
-applaud = -> print("clapping")	# "Ah" the computer says internally, "I know 'applaud' now."
+applaud = -> print("clapping")	# Tell the computer to remember this code under the name 'applaud'
 print("Two")				
 applaud()						# Execute the applaud code
-								# You can think of a function call as meaning "go to and run"
+								# You can think of a function call as meaning "go to and run that code"
 print("Three")
 
 
 ######################################## P
-# A function can have multiple lines of code separated by semi-colons.
+# A function can have multiple lines of code, separated by semi-colons.
 
 applaud = -> print( "clapping"); print("clapping"); print("clapping");
 applaud()
@@ -59,7 +67,7 @@ applaud()
 # This is the more common way of writing functions in CoffeeScript.
 
 applaud = -> 
-	print("clapping")	# The indented code is called the function's "Body"
+	print("clapping")	# The function's code is called the function's "body"
 	print("clapping")
 	print("clapping")
 
@@ -67,7 +75,7 @@ applaud()
 
 
 ######################################## P
-# You can write functions that accept "input" (or an "argument"):
+# You can write functions that accept "arguments" or "input".
 
 
 echo = (sound)-> # 'sound' becomes a variable for use inside of the function. The value is set when the function is called.
@@ -162,7 +170,7 @@ bake = (ingredient)->
 	
 print bake "apple" 
 
-# Tech Note: In JavaScript, if no value is explicitly returned using 'retun', the function returns the special value 'undefined'.
+# Tech Note: In JavaScript, if no value is explicitly returned using 'return', the function returns the special value 'undefined'.
 
 
 
