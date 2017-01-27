@@ -6,26 +6,16 @@
 
 		print a 	# 100
 
-	Write code above the test statement so that the test statement prints the value in the comment.
-	For example, to solution to the quiz above is:
+	Write code ABOVE the test statement so that the test statement prints the value in the comment.
+	For example, the 'solution' to the quiz above is:
 
 		a = 100		
 		print a 	# 100		
 
-	
-	— Ian Bellomy, 2016
+
+	— Ian Bellomy, 2017
 
 ###
-
-######################################## Q 
-
-print snakes	# 13
-
-
-
-######################################## Q 
-
-print jonSnow.knowledge  	#  "nothing"
 
 
 ######################################## Q 
