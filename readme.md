@@ -1,5 +1,7 @@
 ## Materials for Learning / Teaching CoffeeScript and FramerJS
 
+*Major updates in progress*
+
 These materials walk through fundamental programming concepts using CoffeeScript and FramerJS. 
 Each file has further instructions.
 
@@ -13,12 +15,3 @@ The goals of these materials are:
 
 
 I've _just_ finished using this specific material for the first time so there's plenty of rough edges.
-
-
-// update
-
-Broke up introduction
-More quizzes of more different kidns on specific topics
-Revised some language
-Added a few new examples / clarification 
-
