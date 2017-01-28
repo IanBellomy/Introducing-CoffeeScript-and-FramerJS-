@@ -20,9 +20,14 @@ layer1 = new Layer
 layer2 = new Layer
 
 # Layers can be positioned by setting their x and y properties.
-layer2.x = 200
+layer2.x = 100
 layer2.y = 200
 # Under the hood, the framework takes care of updating the visuals.
+# Note that these changes happen instantly. 
+
+# Layers can be sized by setting their width and height properties.
+layer2.width = 50
+layer2.height = 200
 
 # Layers have a backgroundColor property. 
 # It can be set to a String that contains any valid CSS color value.

@@ -1,6 +1,5 @@
 ###
 	
-
 	The programs in this document introduce: 
 		
 		• Functions
@@ -11,20 +10,17 @@
 ######################################## P1
 # We can write our own functions.
 # In CoffeeScropt, a function or "function literal" looks like this:
-
--> #FUNCTION CODE HERE
-
-# This is also called a "function declaration"
-# The "->" means "The code that follows is code for a function"
-# This above function has no code.
-
-######################################## P2
-# Here the code 'print("I ran!")' is inside the function.
-# Function code is not run immeidately. It is set aside to run LATER
+#
+# -> FUNCTION CODE/BODY
+#
+# example:
 
 -> print("I ran!")
 
-
+# This is also called a "function declaration"
+# The "->" means "The code that follows is code for a function"
+# The code that comes after is the function body
+# The function body does not run immediately. It is set aside (or remembered) for running LATER.
 
 ######################################## P3
 # If we want to USE our function, we must store it in a variable.
@@ -67,7 +63,7 @@ applaud()
 # This is the more common way of writing functions in CoffeeScript.
 
 applaud = -> 
-	print("clapping")	# The function's code is called the function's "body"
+	print("clapping")	# The function's code is called the function's body
 	print("clapping")
 	print("clapping")
 
@@ -82,7 +78,7 @@ echo = (sound)-> # 'sound' becomes a variable for use inside of the function. Th
 	print(sound)  # A variable used to hold incoming data is called a "parameter"
 	print(sound)  # 'sound' is a parameter. Think of it like a function's "input".
 
-echo "Hello!" # When we can call our function with the argument "Hello", we can use the shortcut like normal.
+echo "Hello!" # When we can call our function with an argument, we can use the shortcut like normal.
 			  # The string "Hello!" will be assigned to the variable 'sound' when the function body runs.
 			  # In other words, "Hello!" is put into the function.
 
@@ -118,7 +114,7 @@ echo "Hello","Sam","James","Bill" # Only the first two arguments are used here
 # Functions can accept objects as arguments:
 
 describe = (obj)-> 
-	print(obj.x + "," + obj.y + "," obj.z)
+	print(obj.x + "," + obj.y + "," + obj.z)
 	
 volume = (obj)-> 
 	return obj.width * obj.height * obj.depth
@@ -146,7 +142,7 @@ print(Number("2"))  # Number("2") returns the number data '2'
 ######################################## P13
 # When using a function call as an argument, the calls are resolved from the inside out, like math.
 
-print(Number("2"))  # 'Number("2")' is executed first.
+print(Number("2"))  # The Number function is executed first, the result is 2, so we get print(2)
 print(Number "2")  	# This means the exact same thing as the line above.
 print Number "2"  	# This means the exact same thing as the line above.
 
@@ -158,7 +154,7 @@ bake = (ingredient)->
 	results = ingredient + " pie"
 	return results
 
-print bake "apple"  # This is the same as 'print(bake("apple"))'
+print bake "apple"  # Try including parenthesis for the print and apple functions if this line looks strange
 
 
 ######################################## P15
@@ -178,8 +174,11 @@ print bake "apple"
 # WARNING! In CoffeeScript, using multiple function calls on the same line with no parenthesis can lead to ambiguity...
 # When using multiple function calls at once, it's a good idea to be very explicit.
 
-print Number "2" + Number "2"   	# Translates to 'print(Number("2"+Number("2")))'  Oh noes!
-print(Number("2") + Number("2"))	# More explicit.
+
+print Number "2" + Number "2"   	
+# The line above translates to 'print(Number("2"+Number("2")))'  NOT what we want!
+# We can avoid this by being More explicit. 
+print(Number("2") + Number("2"))	
 
 
 ######################################## 

@@ -11,9 +11,9 @@
 ######################## P1
 # A class is like a template for an Object.
 
-class Cat			# Define a category of Objects called Cat
+class Cat				# Define a category of Objects called Cat
 	hairballs:10		# All Cat objects will have hairball property
-	hork:->			# All Cat objects will have a hork() method
+	hork:->				# All Cat objects will have a hork() method
 		print "HORK"
 	
 # An Object based on a class is called an "instance". We create instances like this:
@@ -21,7 +21,6 @@ hobbes = new Cat()
 
 
 # An instance has all the methods and properties defined by its class. 
-hobbes.hork()
 hobbes.hork()
 print hobbes.hairballs 
 

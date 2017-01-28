@@ -30,6 +30,15 @@ sayFive() 				#  "Five"
 
 
 ######################################## Q4
+# Create a function that makes the output match what's described.
+
+# (code here)
+
+days = sayTwo() 				
+print days			#  "Two"
+
+
+######################################## Q5
 # Create a 'combine' function so that the results match what's described.
 
 # (code here)
@@ -39,7 +48,7 @@ print combine(2,4) 		#  6
 print combine(1,1) 		#  2
 
 
-######################################## Q5
+######################################## Q6
 # Create a 'combine' function so that the results match what's described.
 
 # (code here)
@@ -55,4 +64,13 @@ combine
 	a:5
 	b:10
 	c:15		# 30
+	
+
+######################################## Q7
+# Create a 'makeBox' function so that the results match what's described.
+
+
+box = makeBox()
+print box.x 	# 0 
+
 
