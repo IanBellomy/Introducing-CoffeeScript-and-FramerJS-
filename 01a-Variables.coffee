@@ -25,7 +25,7 @@
 
 ###
 
-######################################## P
+######################################## P1
 # Some words are like magic spells. 
 # We cast the spell by using a keyword, followed by parenthesis and a semi-colon.
 # In programming we call spells "functions".
@@ -34,13 +34,13 @@
 
 print()  # A panel should pop up on the right side. 
 
-######################################## P
+######################################## P2
 # If you try to use a function that doesn't exist, you'll get an error.
 
 explode()
 
 
-######################################## P
+######################################## P3
 # Some functions accept additional details.
 # We call these details "arguments".
 
@@ -51,7 +51,7 @@ print(100,200,300)
 # Above, we're passing 100 to the print function. Next we 'pass three numbers to print'.
 
 
-######################################## P
+######################################## P4
 # In CoffeeScript, if we "call" a function "with arguments", we can leave out the parenthesis.
 # This is common shortcut in CoffeeScript. It looks like this:
 
@@ -64,7 +64,7 @@ print 100,200,300
 # Most languages are NOT like this though (C,C++,C#,Java,Javascript,Swift,Objective-C)
 # Significant whitespace is a polarizing paradigm among developers. 
 
-######################################## P
+######################################## P5
 # If we ever call a function WITHOUT arguments, we MUST use '()'
 
 print() 	# Function call. Ok.
@@ -73,7 +73,7 @@ print "ok"	# Function call with arguments. Ok.
 
 # We will use parenthesis for this section.
 
-######################################## P
+######################################## P6
 # Computers do math.
 # +,-,/,* are called "operators" or "operations".
 # A math expression is called an "expression".
@@ -87,7 +87,7 @@ print(10/10)
 
 
 
-######################################## P
+######################################## P7
 # Data comes in different types, or "data types".
 # Some data types are "primitive" and are built into the language.
 # CoffeeScript/Javascript has a few primitive data types:
@@ -104,7 +104,7 @@ print(true)
 # Tech Note: CoffeeScript and JavaScript do not distinguish between integers and floating point numbers like some other languages.
 
 
-######################################## P
+######################################## P8
 # In JavaScript and CoffeeScript, datatypes affect how operations work.
 # Technically, the computer will try to convert the data to something that works. 
 
@@ -116,7 +116,7 @@ print("2"*2)
 # (Some languages play it safe and refuse to convert data unless told to.)
 
 
-######################################## P
+######################################## P9
 # Data can be stored in memory.
 # There are two basic places: long term (hard drive) and short term (RAM).
 # Data in long term storage will remain even if the program stops. It is a topic for another day.
@@ -136,14 +136,14 @@ herp_derp = 1
 # Note: For those who know JavaScript, 'var' is not allowed in CoffeeScript. 
 
 
-######################################## P
+######################################## P10
 # Variables can be used wherever you would use data
 
 a = 1
 print(a)  		
 
 
-######################################## P
+######################################## P11
 # When variables are used with a math operator, the variable names are replaced with their data before the math is resolved.
 
 a = 2
@@ -151,14 +151,14 @@ print(a+a) 		# This becomes 'print 2+2' which becomes 'print 4'
 print((a+a)*a) 	# This becomes 'print (2+2)*2' which becomes 'print 8'
 
 
-######################################## P
+######################################## P12
 # The same applies during assignment:
 
 a = 2
 b = a+a+a  		# This becomes 'b = 2+2+2' which becomes 'b = 6'
 print(b + b) 	# 'print 6+6' becomes 'print 12'
 
-######################################## P
+######################################## P13
 # When primitive data is assigned to a variable, the variable's old data is overwritten.
 
 a = 1
@@ -167,7 +167,7 @@ a = a + a 	# becomes 'a = 2 + 2', then becomes 'a = 4'. Finally, the 2 that was 
 print(a)
 
 
-######################################## P
+######################################## P14
 # Look very carefully. This part is tricky.
 
 a = 1

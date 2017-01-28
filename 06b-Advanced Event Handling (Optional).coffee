@@ -1,13 +1,12 @@
 ###
 
-	(Deprecated)	
-	FramerJS introduction: 
+	(In progress)
 
-		• Advanced event handling
+	• Advanced event handling
 
 ###
 
-######################## P
+######################## P1
 # It's not uncommon for a function to use a String for an important detail.
 # However, this can create a problem.
 # If the String has a typo, for example, "mousedown", your event will never be called and there will be no error. 

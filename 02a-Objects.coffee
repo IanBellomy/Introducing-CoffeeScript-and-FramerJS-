@@ -12,7 +12,7 @@
 ######################################## Objects
 ######################################## 
 
-######################################## P
+######################################## P1
 # In addition to primitive data types there are "complex data types" or "data structures".
 # The most common type is an "Object"
 # You can think of it as a collection of variables.
@@ -29,7 +29,7 @@ pet.type = "Old cat"	# overwriting the data
 print(pet.type)		
 
 
-######################################## P
+######################################## P2
 # Objects allow us to create structured data.
 
 pet1 = {}
@@ -45,7 +45,7 @@ print(pet1.type)
 print(pet2.name)
 print(pet2.type)
 
-######################################## P
+######################################## P3
 # You can define an object's properties IN the Object Literal.
 # HOWEVER, instead of using '=' we use ':'
 # This is called "Object Literal Notation" opposed to "Dot Notation" or "Dot Syntax".
@@ -56,7 +56,7 @@ print pet
 
 # The reasons for using ':' instead of '=' are partly historical.
 
-######################################## P
+######################################## P4
 # You can create nested object structures, or hierarchies. 
 
 pet = {name:"Sam Jr."}
@@ -67,7 +67,7 @@ print(pet.parent.name)
 print(pet.parent.parent.name)
 
 
-######################################## P
+######################################## P5
 # You can also create objects with nested structures on one line using "Object Literal Notation"
 
 pet = {name:"Sam",type:"Cat",age:3,parent:{name: "Sam Sr."}}
@@ -78,7 +78,7 @@ print(pet.age)
 print(pet.parent.name)
 
 
-######################################## P
+######################################## P6
 # Nested object structures are common, and putting them on one line is messy.
 # CoffeeScript has a shorthand.
 # It looks like an outline.
@@ -106,14 +106,14 @@ print(pet.parent.name)
 ######################################## Object Literals and Function Calls
 ######################################## 
 
-######################################## P
+######################################## P7
 # Some functions accept objects as arguments
 
 pet = {name:"Mike Hat",type:"Dog"}
 print(pet)
 
 
-######################################## P
+######################################## P8
 # Here is the same program with the Object Literal Shorthand
 
 pet = 
@@ -123,13 +123,13 @@ pet =
 print(pet)
 
 
-######################################## P
+######################################## P9
 # We can also use an Object Literal directly as an argument
 
 print({name:"Mike Hat",type:"Dog"})
 
 
-######################################## P
+######################################## P10
 # We can also use an Object Literal Shorthand when doing this.
 
 print(	
@@ -138,7 +138,7 @@ print(
 
 # This program is EXACTLY the same as the previous program
 
-######################################## P
+######################################## P11
 # In CofeeScript, it is very common to use function call shorthand AND Object Literal Shorthand together
 
 print					# The line return and tab indicate new object literal 
@@ -157,7 +157,7 @@ print					# The line return and tab indicate new object literal
 ######################################## Built in variables
 ######################################## 
 
-######################################## P
+######################################## P12
 # Framer and JavaScript come with many built in variables.
 # They are often organized into objects.
 # In most cases, you can not put data in them, you can only read their values.
@@ -170,7 +170,7 @@ print Screen.height
 ######################################## References
 ######################################## 
 
-######################################## P
+######################################## P13
 # Assigning Objects to variables is DIFFERENT from assigning primitive data to variables.
 # Object data is always given it's OWN UNIQUE memory area. 
 # When an Object is assigned to a variable, the variable "refers to" this memory.
@@ -187,7 +187,7 @@ print(clark.power)
 print(superman.weakness)	
 print(clark.weakness)		# Clark and Superman "refer to" the SAME object!
 
-######################################## P
+######################################## P14
 # Note the difference when using primitive data.
 
 clark = "kryptonian"	# Assign data to variable 'clark'
@@ -198,7 +198,7 @@ clark = "Kent"			# Assign new data to variable 'clark'.
 print(clark)
 print(superman)
 
-######################################## P
+######################################## P15
 # If we assign primitive data to a variable that has REFERENCE, 
 # the REFERENCE is overwritten, NOT the object data being referred to.
 # The DATA will still exist in memory,
@@ -214,7 +214,7 @@ print(clark)
 print(superman)
 
 
-######################################## P
+######################################## P16
 # Advanced Technical Note:
 # If we overwrite every reference to an object
 # The data will STILL persist in memory,

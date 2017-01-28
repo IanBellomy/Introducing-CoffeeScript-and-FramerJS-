@@ -6,7 +6,7 @@
 
 ###
 
-######################################## P
+######################################## P1
 # A function can be assigned to an object property.
 # When a function belongs to an object like this, it is called a "method"
 
@@ -19,7 +19,7 @@ cat.eat "kibbles"	# you can use the Coffeescript's shortcut just like with funct
 
 
 
-######################################## P
+######################################## P2
 # We can define a method in an Object Literal.
 # This gets messy though...
 
@@ -29,7 +29,7 @@ cat.eat "kibbles"
 
 
 
-######################################## P
+######################################## P3
 # You can also define a method using CoffeeScript's Object Literal Shorthand.
 
 cat = 				# variable declaration 
@@ -43,7 +43,7 @@ print cat.age
 cat.eat "kibbles" 
 
 
-######################################## P
+######################################## P4
 # In any language, in a method, you can refer to the Object that the method belongs to.
 # In JavaScript and CoffeeScript, we use the keyword 'this'.
 
@@ -63,7 +63,7 @@ cat2 =
 cat1.speak()	# because these method calls include no arguments, we must use '()'
 cat2.speak()
 
-######################################## P
+######################################## P5
 # Methods can also modify the variables of the object they belong to.
 
 cat = 
@@ -80,7 +80,7 @@ cat.hork()
 
 
 
-######################################## P
+######################################## P6
 # In CoffeeScript, "this." can be replaced with "@".
 # Note that the dot after "this" is also replaced.
 # The shortcut is very common in CoffeeScript code.
@@ -98,7 +98,7 @@ cat.hork()
 
 
 
-######################################## P
+######################################## P7
 # JavaScript (and CoffeeScript) have many built in functions.
 # They are often organized by being attached to an Object.
 # For example, many mathematical functions are attached to the built in 'Math' Object.

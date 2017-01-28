@@ -8,7 +8,7 @@
 
 ###
 
-######################## P
+######################## P1
 # Layers are a powerful class provided by the FramerJS library.
 # When we create a Layer, we create a special object with properties for 
 # location, size, backgroundColor, etc.
@@ -37,7 +37,7 @@ layer2.backgroundColor = "rgb(255,0,0)"
 # When you modify the layer's properties, Framer modifies the inline style.
 
 
-######################## P
+######################## P2
 # We can set many of the layer's properties right when we create it
 # by passing an object with the settings we'd like
 
@@ -52,7 +52,7 @@ layer2 = new Layer
 	height:20
 
 
-######################## P
+######################## P3
 # Layers "generate events" when something like a click happens.
 # We write code the responds to these events.
 # Specifically we "add" functions that "listen" for these events. 
@@ -76,7 +76,7 @@ block.onMouseDown(handleMouseDown)
 # This pattern is described as "adding an event listener".
 
 
-######################## P
+######################## P4
 # We can create an add event handlers with function literals
 # This shortens things up a bit.
 
@@ -87,7 +87,7 @@ block.onMouseDown ->
 
 # Because we're calling the 'onMouseDown' method with an argument, we can omit the parenthesis
 
-######################## P
+######################## P5
 # When an handler function is called, the keyword 'this' will refer to the Layer that generated the event. 
 # This makes it easy to refer to the object that was acted on.
 
@@ -101,7 +101,7 @@ block.onMouseUp ->
 	@backgroundColor = "black"
 
 
-######################## P
+######################## P6
 # This example creates a button-like entity that responds to the mouse in several ways.
 
 block = new Layer
@@ -120,7 +120,7 @@ block.onMouseUp ->
 	@backgroundColor = "orange"
 
 
-######################## P
+######################## P7
 # When an event handler is called, it is given an Event Object
 # This object is dense and has lots of information about the event, like where it happened
 
@@ -129,7 +129,7 @@ block = new Layer
 block.onMouseDown (eventData)->
 	print eventData.offsetX + "," + eventData.offsetY	
 
-######################## P
+######################## P8
 # In this next example, we want to listen to events on the background
 # We can just create a layer that is the size of the screen.
 

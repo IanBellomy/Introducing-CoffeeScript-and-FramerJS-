@@ -8,7 +8,7 @@
 ###
 
 
-########################
+######################## P1
 # A class is like a template for an Object.
 
 class Cat			# Define a category of Objects called Cat
@@ -29,7 +29,7 @@ print hobbes.hairballs
 # Tech Note: If you're familiar with JavaScript, you may be asking, "How does CoffeeScript have classes if it compiles to JavaScript, which does not have classes?" 
 # Answer: Shinanigans. Just roll with it. 
 
-########################
+######################## P2
 # Classes in CoffeeScript can have a special 'constructor' method.
 # This method will be called, automatically, when a new instance is created.
 
@@ -40,7 +40,7 @@ class Robot
 
 r = new Robot() 
 
-########################
+######################## P3
 # Constructor methods can accept arguments.
 # This can be a handy way to set some options when creating an instance.
 
@@ -57,7 +57,7 @@ r = new Robot "Johnny"  # Note that we can omit the parenthesis like with normal
 print r.name
 
 
-########################
+######################## P4
 # Construtor methods can accept objects as arguments.
 
 class Box			
@@ -77,7 +77,7 @@ print b2.getVolume()
 
 
 
-########################
+######################## P5
 # The same exact same program using shortcuts.
 
 class Box			
@@ -102,3 +102,4 @@ b2 = new Box
 
 print b1.getVolume()
 print b2.getVolume()
+

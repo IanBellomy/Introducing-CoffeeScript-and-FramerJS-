@@ -7,28 +7,28 @@
 
 
 
-######################################## Q
+######################################## Q1
 # Create a variable named 'box' and assign to it the number 10
 # The answer should be one line long
 
 
 
-######################################## Q
+######################################## Q2
 # Create a 'circle' variable that holds the number 10
 # The answer should be one line long
 
 
-######################################## Q
+######################################## Q3
 # Assign the String "cat" to the variable 'animal'
 # The answer should be one line long
 
 
-######################################## Q
+######################################## Q4
 # Assign the value true to the variable 'doingFine'
 # The answer should be one line long
 
 
-######################################## Q 
+######################################## Q5
 # Write code that makes the output match what's described
 
 # (code here)
@@ -36,7 +36,7 @@
 print snakes	# Output: 13
 
 
-######################################## Q 
+######################################## Q6 
 # Write code that makes the output match what's described
 
 # (code here)
@@ -45,7 +45,7 @@ print duce + duce	# Output: 4
 
 
 
-######################################## Q
+######################################## Q7
 # Q: What does this program print out?
 
 cats = 12
@@ -54,7 +54,7 @@ print(cats+boxes) # A:
 
 
 
-######################################## Q
+######################################## Q8
 # Q: What does this program print out?
 
 dogs = 12
@@ -63,7 +63,7 @@ print(cats+dogs) # A:
 
 
 
-######################################## Q
+######################################## Q9
 # Q: What does this program print out?
 
 mine = 10
@@ -73,7 +73,7 @@ mine = 1
 print(yours) # A: 
 
 
-######################################## Q
+######################################## Q10
 # Q: What does this program print out?
 
 x = 10
@@ -83,7 +83,7 @@ x = 2
 print(x + y) # A: 
 
 
-######################################## Q
+######################################## Q11
 # Q: What does this program print out?
 
 start = 1

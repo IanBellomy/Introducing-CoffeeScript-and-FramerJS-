@@ -5,14 +5,14 @@
 	— Ian Bellomy, 2016
 
 ###
-######################## Q 
+######################## Q1
 
 rat = {}
 trainChef rat
 rat.cook()			# "Soup's up!"
 
 
-######################## Q
+######################## Q2
 
 describe					# "Bob is 42 with Brown hair"
 	name: "Bob"
@@ -20,12 +20,12 @@ describe					# "Bob is 42 with Brown hair"
 	hair: "Brown"
 
 
-######################## Q
+######################## Q3
 
 print newAnt().legs	# 6
 
 
-######################## Q
+######################## Q4
 
 bob = newBug 6
 bill = newBug 8
@@ -33,7 +33,7 @@ print bob.legs 		#6
 print bill.legs 	#8 
 
 
-######################## Q
+######################## Q5
 
 sam = newCat()
 sal = newCat()
@@ -43,18 +43,18 @@ print sam.hungry   # false
 print sal.hungry   # true
 
 
-######################## Q
+######################## Q6
 
 horn()			# "HONK!"
 honk horn		# "HONK!"
 
 
-######################## Q
+######################## Q7
 
 newGreeting()()		# "Hi"
 
 
-######################## Q 
+######################## Q8
 
 americanHello 	= newGreeting("Hi")
 spanishHello 	= newGreeting("Saludo")
@@ -64,7 +64,7 @@ spanishHello() 					# "Saludo"
 
 
 
-######################## Q
+######################## Q9
 
 brokenCountDown 4	# 4
 					# 3

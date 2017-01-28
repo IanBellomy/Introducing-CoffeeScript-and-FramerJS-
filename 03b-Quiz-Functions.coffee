@@ -5,16 +5,16 @@
 	
 ###
 
-######################################## Q 
+######################################## Q1
 # Create a function 'one' that returns the value 1
 
 
-######################################## Q 
+######################################## Q2
 # Create a function 'bark' that, when run, prints "BARK" three times
 
 
 
-######################################## Q 
+######################################## Q2
 # Create a function that makes the output match what's described.
 
 # (code here)
@@ -22,7 +22,7 @@
 print(getFive()) 		#  5
 
 
-######################################## Q 
+######################################## Q3
 # Create a function that makes the output match what's described.
 
 # (code here)
@@ -30,7 +30,7 @@ print(getFive()) 		#  5
 sayFive() 				#  "Five"
 
 
-######################################## Q 
+######################################## Q4
 # Create a 'combine' function so that the results match what's described.
 
 # (code here)
@@ -40,7 +40,7 @@ print combine(2,4) 		#  6
 print combine(1,1) 		#  2
 
 
-######################################## Q 
+######################################## Q5
 # Create a 'combine' function so that the results match what's described.
 
 # (code here)
@@ -58,7 +58,7 @@ combine
 	c:15		# 30
 
 
-######################################## Q 
+######################################## Q6
 # Create code that makes the output match what's described.
 
 # (code here)

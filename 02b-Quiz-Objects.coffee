@@ -7,17 +7,17 @@
 
 
 
-######################################## Q
+######################################## Q1
 # Create an object with x and y properties, each with the value 0, and assign the object to the variable box.
 
 
 
-######################################## Q
+######################################## Q2
 # Create an object and assign it to the variable 'block'
 # Add two properties to it, width and height, each set to 10
 
 
-######################################## Q 
+######################################## Q3
 # Write code that makes the output match what's described.
 
 # (code here)
@@ -26,14 +26,14 @@ print jonSnow.knowledge  	#  "nothing"
 
 
 
-######################################## Q
+######################################## Q4
 # Q: What does this program print out?
 
 dragon = {name:"Trogdor"}
 print dragon.name	# A:
 
 
-######################################## Q
+######################################## Q5
 # Q: What does this program print out?
 
 robot = {name:"R2D2"}
@@ -42,7 +42,7 @@ print robot.name	# A:
 
 
 
-######################################## Q
+######################################## Q6
 # Q: What does this program print out?
 
 wand =
@@ -53,7 +53,7 @@ wand =
 print wand.owner # A:
 
 
-######################################## Q
+######################################## Q7
 # Q: What does this program print out?
 
 Agent = 
@@ -67,7 +67,7 @@ print DoubleAgent.alive # A:
 
 
 
-######################################## Q
+######################################## Q8
 # Q: What does this program print out?
 
 name = "Bob"
@@ -78,7 +78,7 @@ guy2 = {name:"Sam"}
 print name
 
 
-######################################## Q
+######################################## Q9
 # Create an object with three property value pairs, 
 # where one of the values is another object with it's own three property value pairs.
 # (Your choice of names and values.) 
