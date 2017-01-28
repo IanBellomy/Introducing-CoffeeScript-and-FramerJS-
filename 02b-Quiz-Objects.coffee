@@ -1,7 +1,6 @@
 ###
 
-	What follows are a set of small quizzes.
-	Each is separated by: ######################################## Q
+	Quiz-Objects
 	
 ###
 

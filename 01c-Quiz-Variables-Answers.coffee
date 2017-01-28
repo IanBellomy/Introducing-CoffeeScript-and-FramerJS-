@@ -1,6 +1,6 @@
 ###
 
-	What follows are a set of small quizzes.
+	Quiz-Variables
 
 ###
 
