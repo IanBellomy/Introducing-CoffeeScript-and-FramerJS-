@@ -4,7 +4,7 @@
 	For each video, create a small program that produces the behavior.
 
 	TIP:
-		Center a layer in the window with th layer's center() method.
+		Center a layer in the window with the layer's center() method.
 		e.g.
 
 			box = new Layer
