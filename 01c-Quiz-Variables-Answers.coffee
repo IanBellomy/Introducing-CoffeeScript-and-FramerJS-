@@ -39,9 +39,9 @@ print snakes	# Output: 13
 ######################################## Q6 
 # Write code that makes the output match what's described
 
-duce = 4
+dos = 2
 
-print duce + duce	# Output: 4
+print dos + dos	# Output: 4
 
 
 

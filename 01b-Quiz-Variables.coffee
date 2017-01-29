@@ -40,7 +40,7 @@ print snakes	# Output: 13
 
 # (code here)
 
-print duce + duce	# Output: 4
+print dos + dos	# Output: 4
 
 
 
