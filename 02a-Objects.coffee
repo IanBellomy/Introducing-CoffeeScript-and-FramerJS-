@@ -208,7 +208,7 @@ clark = {power:"flight"}
 superman = clark
 clark = "Kent" 	# This overwrites the -reference- NOT the -object data-. 
 				# The object still exists.
-				# The variable clark still refers to it.
+				# The variable superman still refers to it.
 
 print(clark)
 print(superman)
