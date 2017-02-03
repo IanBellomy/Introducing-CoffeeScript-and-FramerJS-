@@ -1,14 +1,16 @@
 ###
 	
-	Introduction: 
+	Introduction to: 
 
-		• Layers and Events
+		• Layers
+		• Basic event handling
 
-	FramerJS is a library.
-	It contains a useful collection of classes and functions for doing UI prototyping.
-	At this point we step away from programming concepts to application.
-	While a lot of what's covered below is specific to FramerJS, 
-	FramerJS shares common patterns, idioms, or approaches that are similar to other UI approaches. 
+	Preface:
+	
+		FramerJS is a library.
+		It contains a useful collection of classes and functions for doing UI prototyping.
+		A lot of what's covered below is specific to FramerJS, but FramerJS shares common 
+		patterns, idioms, and approaches that are similar to other UI frameworks. 
 
 ###
 
