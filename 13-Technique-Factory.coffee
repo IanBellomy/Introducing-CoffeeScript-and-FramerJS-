@@ -1,6 +1,7 @@
 ###
 	
 		Factories:
+
 		How to create multiple copies of a complex object.
 
 ###
@@ -11,7 +12,7 @@
 # Here's a simple example.
 
 makeThing = ->		# Here's the factory function
-	return {type:"Thing",cost:100,fireproof:true}	# the object the function will return
+	return {cost:100,fireproof:true,timeStamp:Framer.Utils.getTime()}	# the object the function will return
 
 t1 = makeThing()	# This becomes  t1 = {type:"Thing",cost:100,fireproof:true}
 t2 = makeThing()	# ...and so forth

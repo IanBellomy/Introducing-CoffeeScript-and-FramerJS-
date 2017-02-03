@@ -107,7 +107,7 @@ print Math.round(3.14) 	# round a number to the closest whole number
 print Math.cos(0)  		# Cosine of an angle
 print Math.random() 	# Returns a number between 0 and 1
 
-# You can find a full list of mathamatical functions by googling "javacript math object"
+# You can find a full list of mathematical functions by googling "javacript math object"
 
 
 ######################################## 
