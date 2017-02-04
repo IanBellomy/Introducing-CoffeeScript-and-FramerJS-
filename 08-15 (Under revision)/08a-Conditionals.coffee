@@ -1,10 +1,10 @@
 ###
 
-	Very basic intro to:
+	Intro to:
 		
-		Comparison operators
-		Conditionals
-		Boolean Logic
+		• Comparison operators
+		• Conditionals
+		• Boolean Logic
 	
 	Note: These topics are large and will not be covered in full. What's here are the essential concepts. These alone are very flexible.
 
@@ -54,7 +54,7 @@ if false			# We never write a raw boolean value in an if statement, but the expr
 if 1<2					# 'if 1<2' resolves to 'if true'...
 	print "I also run"	# ... and the code in the "body" will run.	
 
-if 1>2 				# 'if 1>2' Resolves to 'if false' and so the body will not run.
+if 1>2 					# 'if 1>2' Resolves to 'if false' and so the body will not run.
 	print "Skip"
 
 
@@ -68,16 +68,17 @@ stay = 48
 leave = 52
 
 if leave > stay
-	print "It's a Brexit!"
+	print "Brexit!"
 
 
 ######################## P
 # Usually, the result of the expression will depend on some circumstance. 
-# Here is a more practical example.
+# Run this program multiple times and note the different results.
 
 if Math.random() > 0.5 		# Note: Math.random() returns a value between 0 and 1. This resolves to something like 'if 0.129420 > 0.5' and then the comparison is made. 
 	print "I got lucky!"	
 
+print "done"
 
 ######################## P
 # The equivalence operator can be used to see if two numbers are equal. 

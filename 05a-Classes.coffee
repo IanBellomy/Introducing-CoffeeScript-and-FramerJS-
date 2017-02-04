@@ -3,7 +3,7 @@
 	Classes.	
 
 	We won't make classes very often, but we will use _existing_ classes a lot. 
-	Knowing a little about what a class is and how they are built will make it easeier to understand how to use pre-made classes.
+	Knowing a little about what a class is and how they are built will make it easier to understand how to use pre-made classes.
 
 
 ###
@@ -29,7 +29,7 @@ print hobbes.hairballs
 print mittens.hairballs
 
 # Tech Note: If you're familiar with JavaScript, you may be asking, "How does CoffeeScript have classes if it compiles to JavaScript, which does not have classes?" 
-# Answer: Shinanigans. Just roll with it. 
+# Answer: Shenanigans. Just roll with it. 
 
 
 ######################## P2
@@ -60,12 +60,12 @@ class Robot
 r = new Robot "Johnny"  # Note that we can omit the parenthesis like with normal function calls. 
 print r.name
 
-# Technically, when we create an instace, we're calling a function that returns an object.
+# Technically, when we create an instance, we're calling a function that returns an object.
 
 
 ######################## P4
 # In coffeeScript
-# When creating an instace, we can leave off the parenthesis even if we don't provide an argument.
+# When creating an instance, we can leave off the parenthesis even if we don't provide an argument.
 
 class Derp
 	isADerp:true
@@ -75,7 +75,7 @@ print d
 
 
 ######################## P4
-# Construtor methods can accept objects as arguments.
+# Constructor methods can accept objects as arguments.
 # This allows us to provide input without having to memorize the order that arguments need to go in.
 
 class Box			
@@ -126,7 +126,7 @@ print b2.getVolume()
 ######################## 
 ###
 	
-	Classes allow developers to create complex and reuseable building blocks. 
+	Classes allow developers to create complex and reusable building blocks. 
 	Libraries and frameworks are just complex collections of useful functions and classes.
 	Framer is itself such a framework.
 

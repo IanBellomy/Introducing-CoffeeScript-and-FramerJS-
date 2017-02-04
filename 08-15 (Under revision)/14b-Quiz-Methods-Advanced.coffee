@@ -2,10 +2,14 @@
 
 	The following quizzes are optional.	
 
-	— Ian Bellomy, 2016
+	note:
+		functions are objects
+		we can move them around just like any kind of data
 
 ###
 ######################## Q1
+# Remember that functions can accept objects as arguments
+# And that methods can be added after the creation of the object
 
 rat = {}
 trainChef rat
@@ -14,6 +18,7 @@ rat.cook()			# "Soup's up!"
 
 ######################## Q2
 
+
 describe					# "Bob is 42 with Brown hair"
 	name: "Bob"
 	age: "42"
@@ -21,8 +26,9 @@ describe					# "Bob is 42 with Brown hair"
 
 
 ######################## Q3
+# Remember that function calls are resolved first.
 
-print newAnt().legs	# 6
+print makeAnt().legs	# 6		
 
 
 ######################## Q4

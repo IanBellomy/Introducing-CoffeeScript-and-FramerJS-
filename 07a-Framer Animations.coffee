@@ -8,24 +8,31 @@
 
 ######################## P1
 # Any UI development framework should include a way to animate things.
-# Framer is no exeption. The Framer layer has an animation method. 
-# You call the method and pass it a object with details about the animation.
-# The Framer library takes care of the rest behind the scenes. You can think of this approach as "fire and forget".
-# (This is common in most animation systems.)
-# Framer will change the layer properties over time to match the details object.
-# In this way, the details object is a kind of animation "target".
+# Framer is no exeption. 
+# Framer layers have an animation method. 
+# You call the method and pass it an object with details about the animation.
+# Framer will change the layer's properties, over time, to match the details object.
+# The details object is a kind of 'animation target' or 'keyframe data'.
+# You can think of this approach as 'fire and forget'. (This is common in many animation systems.)
 
 
 box = new Layer
+box.animate({x:300,y:300}) 
 
+
+######################## P1.a
+# Same as above, but using shortcuts. 
+# This is super common and we'll use this approach hereafter
+
+box = new Layer
 box.animate
-	y:300		
-	x:300		
-
+	x:300
+	y:300
 
 ######################## P2
 # The details object can include an options property that contains more animation details.
-# Two common options are time and delay. Time is the duration of the animation and delay is, well, a delay.
+# Two common options are time and delay. 
+# Time is the duration of the animation and delay is, well, a delay.
 
 box = new Layer
 
@@ -37,7 +44,7 @@ box.animate
 		time:0.5			# The animation will last for 1/2 a second.
 		delay:2 			# The animation will start in 2 seconds.  		
 
-# There are other options in the official documentation. (http://framerjs.com/docs/)
+# There are more options in the documentation. (cmd+D)
 
 
 ######################## P3
@@ -46,8 +53,8 @@ box.animate
 box = new Layer
 
 box.onMouseDown ->						
-	@animate							# Remember, '@' means 'this.' and 'this' refers to the Layer that emitted the event. When the handler function runs, '@animate' will mean 'box.animate'
-		rotation:180 + @rotation		
+	@animate							# Remember, '@' means 'this.' and 'this' refers to the Layer that emitted the event. 
+		rotation:180 + @rotation		# When the handler function runs, '@animate' translates to 'box.animate'
 
 
 ######################## P4
@@ -110,38 +117,4 @@ box1.onMouseDown ->			# I put these animations in the mouse down handler so you 
 		options:
 			curve:"ease-in-out"
 
-
-
-######################## 
-######################## Animation Events
-######################## 
-#
-#	Before starting this section, review Advanced Event Handling
-#
-
-######################## P6
-# Layers that are animating will emit an AnimationEnd event when the animation is complete.
-# In other frameworks, a function that is called after a process is complete is sometimes named a "callback". 
-
-box = new Layer
-
-box.on Events.AnimationEnd, ->		# You can add the an AnimationEnd event handler any time before the animation is complete. But it's safest to add it before you start the animation.
-	print "TA-DA!"
-	
-box.animate
-	rotation:180
-
-######################## P7
-# The ability to respond to an animation end is useful for chaining animations.
-# However, it can be a good idea to use .once() instead of .on() in these situations
-
-box = new Layer
-
-box.once Events.AnimationEnd, ->	# If we used .on() instead of .once(), then this function would be called after the x animation ran, and after than, and after that, and after that...
-	@animate
-		x:300
-
-box.onMouseDown ->
-	@animate
-		y:180
 
