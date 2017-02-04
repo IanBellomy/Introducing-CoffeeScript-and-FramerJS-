@@ -8,7 +8,7 @@
 
 ######################## P1
 # Any UI development framework should include a way to animate things.
-# Framer is no exeption. 
+# Framer is no exception. 
 # Framer layers have an animation method. 
 # You call the method and pass it an object with details about the animation.
 # Framer will change the layer's properties, over time, to match the details object.
@@ -20,7 +20,7 @@ box = new Layer
 box.animate({x:300,y:300}) 
 
 
-######################## P1.a
+######################## P1 (alternate)
 # Same as above, but using shortcuts. 
 # This is super common and we'll use this approach hereafter
 
@@ -58,9 +58,10 @@ box.onMouseDown ->
 
 
 ######################## P4
-# Calling layer.animate() while the layer is already animating can cancel the previous animation.
-# This can be useful.
-# Try rolling over and out of the box quickly.
+# Calling layer.animate() while the layer is already animating can cancel the previous 
+# animation IF the new animation target has the same properties as the previous target.
+# This behavior can be useful for things like rollovers.
+# Try moving the cursor over and off of the box quickly / repeatedly.
 
 box = new Layer
 	x : 100
@@ -84,11 +85,11 @@ box.onMouseOut ->
 # Interpolation is when a set of values between two values are calculated using an equation.
 # Different equations can be used for interpolation. 
 # Different equations result in different sets of values that lead to different looks, or easing, to an animated change. 
-# Because of this, sometimes theseequations are called "easing equations". 
+# Because of this, sometimes these equations are called "easing equations". 
 # The values of these equations, when graphed, will look like different kinds of curves: 
 # Because of this, "easing equations" are sometimes just called "curves".
 # In animation software, like After effects, you adjust these curves by hand.
-# Many UI frameworks provide a set of premade options.
+# Many UI frameworks provide a set of pre-made options.
 # Framer's options include: "ease-in", "ease-out", "ease-in-out".
 # There are more options in the documentation.
 

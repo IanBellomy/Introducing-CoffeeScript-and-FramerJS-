@@ -158,7 +158,7 @@ block.onMouseOver ->
 	print "?" 		
 
 # This approach is very common in FramerJS. 
-# It's very very brief, but it can be ambiguous if you don't undersatnd that:
+# It's very very brief, but it can be ambiguous if you don't understand that:
 # 'onMouseOver' is a "method" being "called" with an "argument" which happens to be a "function literal"
 
 
@@ -200,7 +200,7 @@ block.onMouseUp ->
 # When an event handler is called, the computer tries to give it an "Event Object"
 # This object has many properties that provide information about what happened.
 # To access this object, our handler must accept one argument.
-# Some of the mose valuable information is information about the cursor location.
+# Some of the most valuable information is information about the cursor location.
 
 block = new Layer
 	x:100
