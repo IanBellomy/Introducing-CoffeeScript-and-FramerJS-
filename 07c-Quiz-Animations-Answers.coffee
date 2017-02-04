@@ -7,6 +7,9 @@
 ######################################## 7.01-ClickColor
 
 box = new Layer
+	width:100
+	height:100
+
 box.center()
 box.onMouseDown ->
 	@animate
@@ -17,8 +20,8 @@ box.onMouseDown ->
 ######################################## 7.02-Basic Button
 
 btn = new Layer
-	x:100
-	y:100
+	width:100
+	height:100
 
 btn.center()
 
@@ -59,6 +62,8 @@ bg = new Layer
 
 layer = new Layer
 	backgroundColor:"white"
+	width:100
+	height:100
 	
 bg.onMouseDown (event)->
 	layer.animate
@@ -70,8 +75,13 @@ bg.onMouseDown (event)->
 ######################################## 7.04-Reveal Other
 
 layer1 = new Layer
+	width:100
+	height:100
+
 layer2 = new Layer
 	y:layer1.height + 1
+	width:100
+	height:100
 	opacity:0
 	height:0
 
@@ -136,6 +146,8 @@ back = new Layer
 
 back.onMouseDown (event)->
 	newLayer = new Layer		
+		width:100
+		height:100
 		backgroundColor:"white"
 		midX:event.pageX
 		midY:event.pageY
