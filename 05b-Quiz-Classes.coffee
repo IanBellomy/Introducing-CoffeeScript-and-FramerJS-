@@ -71,7 +71,7 @@ print b2.area()		# 4
 
 ######################################## Q5
 # Create a 'Point' class with a constructor that accepts two inputs, 'x' and 'y'
-# These inputs get assigned to the properties x and y 
+# These inputs get assigned to the properties x and y. 
 # Create a method 'sum' for the 'Point' class that returns the sum of its x and y values
 
 

@@ -10,13 +10,13 @@
 
 
 ######################################## Q2
-# Create a three layers 'a' 'b' and 'c'.
+# Create three layers 'a' 'b' and 'c'.
 # Use 'a' as a parent for 'b' and 'c'
 
 
 
 ######################################## Q3
-# Create a red layer that's the size of the screen
+# Create a red layer the size of the screen
 
 
 
@@ -31,7 +31,6 @@
 
 
 ######################################## Q6
-# Create a layer the size of the screen
-# When you click this layer, another layer is created 
-# and placed so that it's top left is where you clicked. 
+# Create a layer the size of the screen.
+# When you click this layer, another layer is created and placed so that it's top left corner is where you clicked. 
 

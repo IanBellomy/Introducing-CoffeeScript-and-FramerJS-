@@ -70,7 +70,7 @@ print robot.used 	# ?
 
 ######################################## Q6
 # Create an object with a method 'cast' that when called results in "Boom!" being printed
-# Assing the object to a variable 'wand'
+# Assign the object to a variable 'wand'
 # Call the wand's 'cast' method
 
 

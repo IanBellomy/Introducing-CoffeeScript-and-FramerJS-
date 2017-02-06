@@ -22,12 +22,13 @@ box.animate({x:300,y:300})
 
 ######################## P1 (alternate)
 # Same as above, but using shortcuts. 
-# This is super common and we'll use this approach hereafter
+# This is super common and we'll use this approach hereafter.
 
 box = new Layer
 box.animate
 	x:300
 	y:300
+
 
 ######################## P2
 # The details object can include an options property that contains more animation details.
@@ -38,10 +39,10 @@ box = new Layer
 
 box.animate						
 	scale:1.2 		
-	rotation:45				# Rotation is in degrees
+	rotation:45				# Rotation is in degrees. Note that layers rotate around their center by default. 
 	backgroundColor:"#ff0000"
 	options:
-		time:0.5			# The animation will last for 1/2 a second.
+		time:0.5			# The animation will last for 1/2 of a second.
 		delay:2 			# The animation will start in 2 seconds.  		
 
 # There are more options in the documentation. (cmd+D)
@@ -53,7 +54,7 @@ box.animate
 box = new Layer
 
 box.onMouseDown ->						
-	@animate							# Remember, '@' means 'this.' and 'this' refers to the Layer that emitted the event. 
+	@animate							# Remember, '@' means 'this.' and 'this' refers to the layer instance that generated the event. 
 		rotation:180 + @rotation		# When the handler function runs, '@animate' translates to 'box.animate'
 
 
@@ -82,17 +83,16 @@ box.onMouseOut ->
 
 ######################## P5
 # Any animation system must "interpolate" between the starting value and the end values of an animation. 
-# Interpolation is when a set of values between two values are calculated using an equation.
+# Interpolation is when a set of values between two other values are calculated using an equation.
 # Different equations can be used for interpolation. 
 # Different equations result in different sets of values that lead to different looks, or easing, to an animated change. 
 # Because of this, sometimes these equations are called "easing equations". 
 # The values of these equations, when graphed, will look like different kinds of curves: 
 # Because of this, "easing equations" are sometimes just called "curves".
-# In animation software, like After effects, you adjust these curves by hand.
-# Many UI frameworks provide a set of pre-made options.
+# In animation software like After effects you adjust these curves by hand.
+# In UI development frameworks you select from a set of pre-made curves. (Sometimes you can insert math for your own curves.)
 # Framer's options include: "ease-in", "ease-out", "ease-in-out".
 # There are more options in the documentation.
-
 
 box1 = new Layer
 box2 = new Layer

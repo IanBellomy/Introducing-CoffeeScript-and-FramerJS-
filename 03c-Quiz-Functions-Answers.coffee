@@ -54,7 +54,7 @@ print days			#  "Two"
 ######################################## Q5
 # Create a 'combine' function so that the results match what's described.
 
-combine = (a,b) -> return a+b
+combine = (a,b) -> a+b
 
 print combine(1,2) 		#  3
 print combine(2,4) 		#  6
@@ -64,7 +64,7 @@ print combine(1,1) 		#  2
 ######################################## Q6
 # Create a 'combine' function so that the results match what's described.
 
-combine = (obj) -> return obj.a + obj.b + obj.c
+combine = (obj) -> obj.a + obj.b + obj.c
 
 combine({a:1,b:2,c:3})	# 6
 	
