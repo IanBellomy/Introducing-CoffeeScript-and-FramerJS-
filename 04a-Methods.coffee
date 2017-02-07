@@ -36,7 +36,7 @@ cat = 				# variable declaration
 	name:"mittens"	# property, and the beginning of the object literal
 	age:10			# property
 	eat:(food)->  	# method declaration
-		print("I pooped ")+ food	# method body
+		print("I pooped "+ food)	# method body
 
 print cat.name
 print cat.age
