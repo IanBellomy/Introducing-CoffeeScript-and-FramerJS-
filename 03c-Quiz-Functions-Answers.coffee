@@ -45,7 +45,7 @@ sayFive() 				#  "Five"
 ######################################## Q4
 # Create a function that makes the output match what's described.
 
-sayTwo = -> 2
+sayTwo = -> "Two"
 
 days = sayTwo() 				
 print days			#  "Two"
