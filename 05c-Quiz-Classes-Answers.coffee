@@ -125,7 +125,7 @@ r2.evil = true
 
 print r1.evil	# false
 
-s.evil = true
+blueprint.evil = true
 
 print r1.evil	# false
 
