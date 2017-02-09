@@ -64,7 +64,7 @@ print combine(1,1) 		#  2
 ######################################## Q6
 # Create a 'combine' function so that the results match what's described.
 
-combine = (obj) -> obj.a + obj.b + obj.c
+combine = (obj) -> print obj.a + obj.b + obj.c
 
 combine({a:1,b:2,c:3})	# 6
 	
