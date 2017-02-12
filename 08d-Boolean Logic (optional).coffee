@@ -19,28 +19,38 @@ if hot						# The structure here is logically equivalent to the one above.
 		print "Still time to swim!"
 
 ######################## P
-# Note which comparisons are true and which are false
+# 'and' is a logical operator (like < or > or == ) that evalutaes to 
+# true if the item on the left is true AND the item on the right is true. 
+# Look carefully at which of these is true.
 
 print true and true
 print true and false
 print false and false
 
-# Note: In most languages, the logical and operator is &&. This version exists in CoffeeScript too if you prefer.
+# Note: In most languages, the logical 'and' operator is '&&', but it works exactly the same.
+# You can also use '&&' in CoffeeScript if you prefer.
 
 
 ######################## P
-# We can chain together many 'and' comparisons in one expression. 
+# We can chain together several  'and' comparisons in one expression. 
+# Like addition, the order is irrelevant.
 
 a = true
 b = true
 c = true
 d = true
 
-if a and b and c and d
+if a and b and c and d   	# Essentialy, this checks to see if a,b,c,d are all true.
 	print "ok ok."
 
-# 'and' is like addition, in that the order of each 'and' doesn't matter. 1+2+4 is just as good as 4+1+2 is just as good as (4+2)+1. 
-# 'a and b and d and c' is just as good as '(a and d) and (c and b)'
+if b and c and a and d      # Same result as above.
+	print "ok ok."
+
+if (a and d) and (b and c)  # Same result as above.
+	print "ok ok."
+
+if ((a and d) and b) and c  # Same result as above.
+	print "ok ok."
 
 
 ######################## P
@@ -54,9 +64,8 @@ if month == "march" and day == 15 and inRome
 	print "Beware."
 
 
-
-
 ...
+
 
 ######################## P
 # "Boolean logic" allows us to describe decision making.
