@@ -12,8 +12,8 @@ robot =
 	goal: -> print "EXTERMINATE"
 
 
-print robot.evil
-robot.goal()  # ?
+print robot.evil	# ?
+robot.goal()  		# ?
 
 
 ######################################## Q2
