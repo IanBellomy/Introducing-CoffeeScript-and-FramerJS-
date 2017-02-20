@@ -4,8 +4,6 @@
 		
 		• Comparison operators
 		• Conditionals
-		• Boolean Logic (Optional) <- this should be removed
-	
 
 	Preface:
 		
@@ -213,7 +211,7 @@ b.onMouseDown ->
 		@html = "..."	
 
 
-######################## P15
+######################## P16
 # A toggle button is a good example of something that 
 # responds in different ways depending on the situation.
 
@@ -232,16 +230,9 @@ toggleButton.onMouseDown ->
 		@backgroundColor = "gray"
 
 
-######################## P15
-#  Other variable responses.. . .
-# shrink until we stop?
-# recusion in functions
-# do something until N
-#
 
-
-
-######################## P15
+######################## P18
+# (description needed: recursive functions)
 
 countDown = (n)->
 	print n
