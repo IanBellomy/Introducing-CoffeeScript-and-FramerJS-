@@ -11,18 +11,33 @@
 
 box = {x:0,y:0}
 
-######################################## Q2
-# Create an object and assign it to the variable 'block'
-# Add two properties to it, width and height, each set to 10
+# OR
 
-block = {}
+box =
+	x:0
+	y:0
+
+######################################## Q2
+# Create a variable 'block' and assign to it an object with no properties
+# Aftwareds, add two properties to it, width and height, each set to 10
+
+block = {}				
 block.width = 10
 block.height = 10
+
 
 ######################################## Q3
 # Write code that makes the output match what's described.
 
 jonSnow = {knowledge:"nothing"}
+
+print jonSnow.knowledge  	#  "nothing"
+
+
+#OR
+
+jonSnow = 
+	knowledge:"nothing"
 
 print jonSnow.knowledge  	#  "nothing"
 
@@ -91,6 +106,14 @@ file =
 		lastEdited:"1/10/2017"
 
 
+# OR
 
+file =
+	name:"Norman1.pdf"
+	lastEdited:"1/10/2017"
+	container:{name:"Documents",lastEdited:"1/10/2017"}
 
+# OR
+
+file = {name:"Norman1.pdf", lastEdited:"1/10/2017", container: {name:"Documents",lastEdited:"1/10/2017"}}
 

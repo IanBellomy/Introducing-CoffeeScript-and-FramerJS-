@@ -12,8 +12,8 @@
 
 
 ######################################## Q2
-# Create an object and assign it to the variable 'block'
-# Add two properties to it, width and height, each set to 10
+# Create a variable 'block' and assign to it an object with no properties
+# Aftwareds, add two properties to it, width and height, each set to 10
 
 
 ######################################## Q3
