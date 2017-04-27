@@ -146,7 +146,7 @@ printArea = (obj)->
 	print( obj.width * obj.height )
 	
 	
-describe({width:20,height:10}) 	# "0,10,100"
+printArea({width:20,height:10}) 	# "0,10,100"
 
 
 
@@ -159,11 +159,11 @@ printArea = (obj)->
 	print( obj.width * obj.height )
 	
 	
-describe({width:20,height:10}) 	# "0,10,100"
+printArea({width:20,height:10}) 	# "0,10,100"
 
-describe {width:20,height:10} 	# Exactly the same as above
+printArea {width:20,height:10} 	# Exactly the same as above
 
-describe 						# Exactly the same as above
+printArea 						# Exactly the same as above
 	width:1
 	height:1
 
@@ -187,7 +187,8 @@ print(Number("2"))  # Number("2") returns the number data '2'
 ######################################## P13
 # When using a function call as an argument, the calls are resolved from the inside out, like math.
 
-print(Number("2"+"2"))  # The math is executed first, the result "22" is passed to the Number function, and the result of that is passed to the print function.
+print(Number("2"+"2"))  # The math is executed first, the result "22" is passed to the Number function, 
+						# and the result of that is passed to the print function.
 
 
 ######################################## P14
