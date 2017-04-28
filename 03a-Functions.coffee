@@ -92,7 +92,7 @@ applaud()	# Code OUTSIDE the function body
 echo = (sound)->  # 'sound' is a variable that only exists inside of the function. The value is set when the function is called.
 	print(sound)  # The sound variable dissapears once the function is complete. 
 	print(sound)  # You can think of a function as an itty bitty program. When it runs it may create some variables.
-				  # And once the function is done running it cleans up it's variables, just like a full program does.
+				  # And once the function is done running it cleans up its variables, just like a full program does.
 				  # To be technical, a variable that is part of a function declaration is called a "parameter".
 				  # The -data- that is passed to the parameter during the function call is called the "argument". 
 				 
@@ -100,7 +100,7 @@ echo = (sound)->  # 'sound' is a variable that only exists inside of the functio
 echo("Hello!") 	# The string "Hello!" will be assigned to the parameter 'sound' when the echo function runs.
 				# But sound will only equal "Hello" this one time.	  	
 
-echo("Goodbye!") # When the echo funtion runs this time, 'sound' will be set euqal to "Goodbye!"
+echo("Goodbye!") # When the echo funtion runs this time, 'sound' will be set equal to "Goodbye!"
 
 ######################################## P8b
 # When we can call our function with an argument, we can use CoffeeScript's shortcut like normal.
