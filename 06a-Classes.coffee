@@ -22,12 +22,17 @@ class Cat				# The start of a "class definition" for the class 'Cat'. Note the U
 # An object based on a class is called an "instance". We create instances like this:
 hobbes = new Cat() # Create an instance of 'Cat'
 mittens = new Cat()
-# Note camelCalse naming convention for variables that reference instances.
+# Note camelCase naming convention for variables that reference instances.
 
 # An instance has all the methods and properties defined by its class. 
 hobbes.hork()
 print hobbes.hairballs 
 print mittens.hairballs
+
+# NOTE: Classes do not create visuals. 
+# Framer's Layer class creates visuals only because it has code in it that 
+# inserts DIV elements into the page and modifies their CSS. We will discuss 
+# how to extend this capability in the advanced section below.
 
 # Tech Note: If you're familiar with JavaScript, you may be asking: 
 # "How does CoffeeScript have classes if it transpiles to JavaScript, which does not have classes?" 
@@ -122,7 +127,7 @@ print b1.getVolume()
 print b2.getVolume()
 
 ######################## 
-######################## End / Note
+######################## Note
 ######################## 
 ###
 	
@@ -134,3 +139,47 @@ print b2.getVolume()
 	That's a topic for another day though... 
 
 ###
+
+######################## 
+######################## Advanced : Extending Framer's Layer
+######################## 
+
+######################## P
+# You can create classes that have all the behaviors of Layer
+# but with small tweaks of your choosing. 
+
+class Box extends Framer.Layer
+	constructor: ->
+		super()						# Here we run the constructor function of the parent class. 
+		@width=10					# Now, our Box instance has all the properties and behaviors of a Layer
+		@height=10					# By setting these properties here, every Box instance will have
+		@backgroundColor="red"		# the same default values. 
+
+b1 = new Box
+b2 = new Box
+b2.x = 11
+
+
+#b3 = new Box						
+#	rotation:45						# NOTE: This will not work yet!
+									
+
+######################## P
+# To make sure we can create our boxes just like we create layers our constructor 
+# must accept a configuration object and pass it to super()
+
+class Box extends Framer.Layer
+	constructor: (config)->
+		super(config)				# Here we run the constructor function of the parent class.
+		@width=10					# Now, our Box instance has all the properties and behaviors of a Layer
+		@height=10					# By setting these properties here, every Box instance will have
+		@backgroundColor="red"		# the same default values. 
+
+b1 = new Box
+	rotation:45
+
+b2 = new Box
+	rotation:45
+	x:11
+
+

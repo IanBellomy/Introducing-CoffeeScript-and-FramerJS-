@@ -16,10 +16,10 @@
 ###
 
 ######################## P1
-# Layers are a powerful FramerJS class used for making visuals.
-# Layer instances have properties like x, y, width, height, backgroundColor, etc.
-# Think of layer instances as customizable rectangles. 
-# When we set of modify their properties, the visuals change automatically. 
+# Layers are a powerful FramerJS class used for making visuals. 
+# (We will discuss classes in the next section, but for now, you can think of them as blueprints.)
+# Layer instances have properties like x, y, width, height, rotation and backgroundColor.
+# When we modify these properties, the visuals change automatically. 
 
 # We create new layers like this.
 layer1 = new Layer
@@ -45,11 +45,11 @@ layer2.backgroundColor = "rgb(255,0,0)"
 
 # Technical Note:
 # When we create a Layer, FramerJS creates a DIV element in the document.
-# FramerJS then uses in-line CSS style properties to control what the DIV looks like.
+# FramerJS then uses inline CSS style properties to control what the DIV looks like.
 # It uses absolute positioning so that we can ignore normal flow (the default way elements are placed).
-# When we modify a layer's properties FramerJS updates the in-line styles.
+# When we modify a layer's properties FramerJS updates the inline css.
 # In MOST cases we will never need to access the underlying element. 
-# We can inject raw HTML into the Div by setting the layer's html property. 
+# We can inject raw HTML into the Div though by setting the layer's html property. 
 #	e.g. 	myLayer.html = "<a href="google.com">Link</a>""
 
 
@@ -257,7 +257,7 @@ bg.onMouseDown (e)->
 
 	Epilogue. 
 
-		Events are not unique to CoffeeScript and FramerJS.
+		Events are not unique to CoffeeScript and FramerJS. 		
 
 		The events that your handlers respond to are the same as, if not similar to, the events that
 		a page's html elements generate. 
