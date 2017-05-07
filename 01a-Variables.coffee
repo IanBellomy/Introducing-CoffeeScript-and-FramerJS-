@@ -186,6 +186,28 @@ print(b)
 
 
 ######################################## 
+######################################## Additional operators
+######################################## 
+# CoffeeScript supports common assignment shortcuts
+
+a = 1
+print a
+a+= 2  	# add to self
+print a
+a-= 2 	# subtract from self
+print a
+a++		# increment by one
+print a
+a--		# decrement by one
+print a
+a/= 2 	# divide self by value
+print a
+a*= 2   # multiply self by value
+print a
+
+
+
+######################################## 
 ######################################## Note
 ######################################## 
 #

@@ -7,21 +7,19 @@
 ######################################## Q1
 # What does this program print?
 
-robot =
-	evil:true
-	goal: -> print "EXTERMINATE"
+robot = {evil:true}
+robot.goal = -> print("EXTERMINATE")
 
 
-print robot.evil	# ?
+print(robot.evil)	# ?
 robot.goal()  		# ?
 
 
 ######################################## Q2
 # What does this program print?
 
-robot =
-	power:10
-	checkCharge: -> print @power
+robot = {power:10}
+robot.checkCharge = -> print(this.power)
 	
 robot.checkCharge() #?
 
@@ -29,9 +27,8 @@ robot.checkCharge() #?
 ######################################## Q3
 # What does this program print?
 
-robot =
-	power:10
-	work: -> @power = @power-1
+robot = {power:10}
+robot.work = -> this.power = this.power-1
 	
 
 robot.work()
@@ -44,9 +41,8 @@ print robot.power 	# ?
 # What does this program print?
 
 power = 100
-robot =
-	power:10
-	work: -> @power = @power-1
+robot = {power:10}
+robot.work = -> this.power = this.power-1
 	
 
 robot.work()
@@ -57,15 +53,16 @@ print power 	# ?
 ######################################## Q5
 # What does this program print?
 
-robot =
-	power:10
-	work: -> 
-		@power = @power-1
-		@used = true
+robot = {power:10}
+robot.work: -> 
+	this.power = this.power-1
+	this.used = true
 	
 
 robot.work()
-print robot.used 	# ? 
+print(robot.used) 	# ? 
+
+
 
 
 ######################################## Q6
@@ -99,10 +96,45 @@ print robot.used 	# ?
 # (code here)
 
 
-wand.cast "Smell"   # "Smell!"
+wand.cast("Smell")   # "Smell!"
 
+
+
+######################################## 
+######################################## Intermediate
+######################################## 
 
 ######################################## Q9
+# Re-write this program WITHOUT CoffeeScript shortcuts
+
+robot = 
+	lasers:3
+	power:10
+	robot.fire: -> 
+		@power -= @lasers
+		
+
+robot.fire()
+print robot.power
+
+######################################## Q10
+# Re-write this program WITH CoffeeScript shortcuts
+
+box = {x:0,y:0}
+box.width = 100
+box.height = 100
+box.grow = ->
+	this.width = this.width + 10
+	this.width = this.width + 10
+		
+
+
+
+######################################## 
+######################################## Advanced
+######################################## 
+
+######################################## Q11
 # What does this program print?
 
 ironMan = {flies:true}
@@ -112,7 +144,7 @@ tony.rich = true
 print ironMan.rich	# ?
 
 
-######################################## Q10
+######################################## Q12
 # What does this program print?
 
 batman = {just:true}
