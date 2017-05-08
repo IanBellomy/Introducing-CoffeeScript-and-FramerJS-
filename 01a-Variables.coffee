@@ -188,21 +188,21 @@ print(b)
 ######################################## 
 ######################################## Additional operators
 ######################################## 
-# CoffeeScript supports common assignment shortcuts
+# CoffeeScript supports common assignment shortcuts or "mutating operators"
 
 a = 1
+
+a+= 2  	# add to self, e.g. a = a + 2
 print a
-a+= 2  	# add to self
+a-= 2 	# subtract from self: a = a - 2
 print a
-a-= 2 	# subtract from self
+a++		# increment by one, e.g. a = a + 1
 print a
-a++		# increment by one
+a--		# decrement by one, e.g. a = a - 1
 print a
-a--		# decrement by one
+a/= 2 	# divide self by value, e.g. a = a/2
 print a
-a/= 2 	# divide self by value
-print a
-a*= 2   # multiply self by value
+a*= 2   # multiply self by value, e.g. a = a * 2
 print a
 
 
