@@ -144,7 +144,7 @@ print b2.getVolume()
 ######################## Advanced : Extending Framer's Layer
 ######################## 
 
-######################## P
+######################## P7
 # You can create classes that have all the behaviors of Layer
 # but with small tweaks of your choosing. 
 
@@ -164,7 +164,7 @@ b2.x = 11
 #	rotation:45						# NOTE: This will not work yet!
 									
 
-######################## P
+######################## P8
 # To make sure we can create our boxes just like we create layers our constructor 
 # must accept a configuration object and pass it to super()
 
@@ -183,3 +183,18 @@ b2 = new Box
 	x:11
 
 
+######################## P8
+# We can define behaviors in our classes too.
+
+class Box extends Framer.Layer
+	constructor: (config)->
+		super(config)				
+		@onMouseDown ->				# As part of the constructor function we add event handlers. 
+			@animate
+				rotation:45
+		@onMouseUp ->
+			@animate
+				rotation:0
+
+b1 = new Box
+b1.center()
