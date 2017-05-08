@@ -54,7 +54,7 @@ print power 	# ?
 # What does this program print?
 
 robot = {power:10}
-robot.work: -> 
+robot.work = -> 
 	this.power = this.power-1
 	this.used = true
 	
@@ -74,10 +74,20 @@ print(robot.used) 	# ?
 
 
 
-
-
 ######################################## Q7
-# Create an object with a property 'cash' set to 0 
+# Create an object with a method such that the last line of the program has the described effect
+
+
+# (code here)
+
+
+wand.cast("Smell")   # "Smell!"
+
+
+
+
+######################################## Q8 (tricky)
+# Create an object with a property 'cash' set to 10 
 # and a method 'add' that has one parameter, 'money' 
 # the 'add' method adds the money input to the object's cash property
 # assign the object to the variable 'piggyBank'
@@ -86,17 +96,6 @@ print(robot.used) 	# ?
 
 
 
-
-
-
-######################################## Q8
-# Create an object with a method such that the last line of the program has the described effect
-
-
-# (code here)
-
-
-wand.cast("Smell")   # "Smell!"
 
 
 
@@ -113,9 +112,6 @@ robot =
 	robot.fire: -> 
 		@power -= @lasers
 		
-
-robot.fire()
-print robot.power
 
 ######################################## Q10
 # Re-write this program WITH CoffeeScript shortcuts
@@ -152,5 +148,6 @@ bruce = batman
 batman = "A legend"
 
 print bruce.just	# ?
+print batman.just	# ?
 
 

@@ -7,14 +7,14 @@
 ###
 
 ######################################## P1
-# A method is a kind of function attached to an object
+# A method is just a function attached to an object.
 
 cat = {}
 cat.meow = -> print("mewwww!")
 
-cat.meow()  # methods are "called" just like functions, because they are functions
+cat.meow()  # methods are "called" just like functions, because they are functions.
 
-# A "method" is a "function" in the same sense that a "property" is a "variable".
+# If you like analogies...   variable:property :: function:method
 
 
 ######################################## P2
@@ -57,8 +57,8 @@ cat1.speak()
 cat2.speak()
 
 ######################################## P4b
-# We can attach existing functions to objects
-# We can reuse code this way.
+# We can use existing functions as methods
+# In other words, we can attach existing functions to objects.
 
 genericSpeak = -> print(this.name)  
 
@@ -66,12 +66,13 @@ cat1 = {name:"meowz",speak:genericSpeak} 	# NOTE that we are NOT calling the gen
 cat2 = {name:"mittens",speak:genericSpeak}	# We are only refering to it. 
 cat3 = {name:"violet",speak:genericSpeak}	# The property 'speak' will contain the function 'genericSpeak'.
 
-cat1.speak() # 'cat1.speak' refers to the original function code assigned to genericSpeak
-cat2.speak() # 'cat2.speak' also refers to the original function code assigned to genericSpeak
+cat1.speak() # 'cat1.speak' refers to the genericSpeak function code
+cat2.speak() # 'cat2.speak' also refers to the genericSpeak function code
 cat3.speak() # same.
 
+
 ######################################## P5
-# Using the this keyword, a methods can modify the variables of the object it belongs to.
+# Using the 'this' keyword, a method can modify the variables of the object it belongs to.
 
 cat = {hairballs:10}
 cat.hork = ->  
@@ -122,7 +123,6 @@ cat.eat "kibbles"
 # In CoffeeScript, "this." can be replaced with "@".
 # Note that the dot after "this" is also replaced.
 # The shortcut is very common in CoffeeScript code.
-# Again, note that we use colons instead of equal signs when creating objects
 
 cat =
 	hairballs: 10
