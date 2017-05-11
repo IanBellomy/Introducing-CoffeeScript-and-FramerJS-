@@ -198,3 +198,5 @@ class Box extends Framer.Layer
 
 b1 = new Box
 b1.center()
+
+

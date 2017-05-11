@@ -229,17 +229,3 @@ toggleButton.onMouseDown ->
 		selected = false
 		@backgroundColor = "gray"
 
-
-
-######################## P18
-# (description needed: recursive functions)
-
-countDown = (n)->
-	print n
-	if n > 0 
-		countDown(n - 1)
-
-countDown(100)
-
-
-

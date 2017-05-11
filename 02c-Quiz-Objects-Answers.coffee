@@ -19,7 +19,7 @@ box =
 
 ######################################## Q2
 # Create a variable 'block' and assign to it an object with no properties
-# Aftwareds, add two properties to it, width and height, each set to 10
+# Aftwards, add two properties to it, width and height, each set to 10
 
 block = {}				
 block.width = 10
