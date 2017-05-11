@@ -64,9 +64,9 @@ print(combine(1,1)) 		#  2
 combine({a:1,b:2,c:3})	# 6
 	
 combine
-	a:2
-	b:4
-	c:6			# 12
+	a:1
+	b:2
+	c:3			# 6
 
 combine
 	a:5

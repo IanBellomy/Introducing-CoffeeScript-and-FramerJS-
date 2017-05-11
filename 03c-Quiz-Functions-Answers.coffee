@@ -62,9 +62,9 @@ update({x:0,xVelocity:1})
 ######################################## Q6
 # Create a function that makes the output match what's described.
 
-makeTwo = -> return 2 
+makeTwo = -> return "Two"
 # OR
-makeTwo = -> 2  
+makeTwo = -> "Two"
 
 
 days = makeTwo() 				
