@@ -198,7 +198,7 @@ bake = (ingredient)->
 	return ingredient + " pie"	
 
 pie = bake("apple") # Try making different kinds of pies!
-bake(pie)
+print(pie)
 
 
 ######################################## P15
