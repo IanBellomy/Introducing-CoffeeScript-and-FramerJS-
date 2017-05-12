@@ -1,10 +1,12 @@
 ###
 
+(Review Classes and Conditionals first)
+
 Radio Buttons
 
-Sometimes we need something to change when something else is clicked. The most common example is a set of options where only one choice is possible. This is called a radio button set. Each radio button is a kind of toggle button, but it's behavior is depends on the other buttons.
+	Sometimes we need something to change when something else is clicked. The most common example is a set of options where only one choice is possible. This is called a radio button set. Each radio button is a kind of toggle button, but it's behavior is depends on the other buttons.
 
-The rule of thumb for these cases is that the parent is reponsible for the children. The buttons don't control themselves or each other; the parent controls the buttons. This rule applies to broadly to interface programming.
+	The rule of thumb for these cases is that the parent is reponsible for the children. The buttons don't control themselves or each other; the parent controls the buttons. This rule applies to broadly to interface programming.
 
 ###
 
