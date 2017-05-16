@@ -1,4 +1,15 @@
 ###
+
+
+	FIXME:
+
+	Creating instance properties as descrbed below but with mutable values is a BAD idea 
+	because they are not duplicated when modified. A single value will end up being shared
+	via prototype across all the instances.  
+
+
+###
+###
 	
 	Introduction to 
 
@@ -15,7 +26,7 @@
 # A class definition describes a new category of objects.
 
 class Cat				# The start of a "class definition" for the class 'Cat'. Note the Uppercase naming convention.
-	hairballs:10		# All Cat objects will have the hairball property
+	hairballs:10		# All Cat objects will have the hairball property						
 	hork:->				# All Cat objects will have the hork() method
 		print "HORK"
 	
