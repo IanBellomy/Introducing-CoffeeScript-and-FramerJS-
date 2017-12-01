@@ -1,7 +1,8 @@
 ## Materials for Learning / Teaching CoffeeScript and FramerJS
 
 These materials walk through fundamental programming concepts using CoffeeScript and FramerJS. 
-Each file has further instructions.
+
+Intended use: Lessons are numbered; Open the first pdf; Print it out; Read it and copy the code by hand; Move to the next; Otherwise follow the instructions.
 
 The goals of these materials are:
 
