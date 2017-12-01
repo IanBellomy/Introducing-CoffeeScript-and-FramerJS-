@@ -2,7 +2,7 @@
 
 These materials walk through fundamental programming concepts using CoffeeScript and FramerJS. 
 
-Intended use: Lessons are numbered; Open the first pdf; Print it out; Read it and copy the code by hand; Move to the next; Otherwise follow the instructions.
+Intended use: Lessons are numbered; Open the first pdf; Print it out; Follow the instructions; Move to the next. 
 
 The goals of these materials are:
 
