@@ -2,6 +2,8 @@
 
 	Quiz-Objects
 	
+	Shorthand answers are listed at the end under BONUS
+
 ###
 
 
@@ -11,11 +13,6 @@
 
 box = {x:0,y:0}
 
-# OR
-
-box =
-	x:0
-	y:0
 
 ######################################## Q2
 # Create a variable 'block' and assign to it an object with no properties
@@ -31,15 +28,7 @@ block.height = 10
 
 jonSnow = {knowledge:"nothing"}
 
-print jonSnow.knowledge  	#  "nothing"
-
-
-#OR
-
-jonSnow = 
-	knowledge:"nothing"
-
-print jonSnow.knowledge  	#  "nothing"
+print(jonSnow.knowledge)  	#  "nothing"
 
 
 
@@ -47,7 +36,7 @@ print jonSnow.knowledge  	#  "nothing"
 # Q: What does this program print out?
 
 dragon = {name:"Trogdor"}
-print dragon.name	# A: "Trogdor"
+print(dragon.name)	# A: "Trogdor"
 
 
 ######################################## Q5
@@ -55,34 +44,17 @@ print dragon.name	# A: "Trogdor"
 
 robot = {name:"R2D2"}
 robot.name = "C3PO"
-print robot.name	# A: "C3PO"
+print(robot.name)	# A: "C3PO"
 
 ######################################## Q6
 # Q: What does this program print out?
 
-wand =
-	name:"Elder"
-	owner:"Potter"
-	length:15
+wand = {name:"Elder",owner:"Potter",length:15}
 
-print wand.owner # A: "Potter"
+print(wand.owner) # A: "Potter"
 
 
 ######################################## Q7
-# Q: What does this program print out?
-
-Agent = 
-	name:"Eddie"
-	alive:true
-
-DoubleAgent = Agent
-Agent.alive = false
-
-print DoubleAgent.alive # A: false
-
-
-
-######################################## Q8
 # Q: What does this program print out?
 
 name = "Bob"
@@ -90,30 +62,143 @@ name = "Bob"
 guy1 = {name:"Ralf"}
 guy2 = {name:"Sam"}
 
-print name # A: "Bob"
+print(name) # A: "Bob"
 
 
-######################################## Q9
+######################################## Q8
 # Create an object with three property value pairs, 
 # where one of the values is another object with two property value pairs.
 # (Your choice of names and values.) 
 
-file =
-	name:"Norman1.pdf"
-	lastEdited:"1/10/2017"
-	container:
-		name:"Documents"
-		lastEdited:"1/10/2017"
-
-
-# OR
-
-file =
-	name:"Norman1.pdf"
-	lastEdited:"1/10/2017"
-	container:{name:"Documents",lastEdited:"1/10/2017"}
-
-# OR
-
 file = {name:"Norman1.pdf", lastEdited:"1/10/2017", container: {name:"Documents",lastEdited:"1/10/2017"}}
 
+
+
+######################################## Q9 BONUS (references)
+# Q: What does this program print out?
+
+Agent = {name:"Eddie",alive:true}
+
+DoubleAgent = Agent
+Agent.alive = false
+
+print(DoubleAgent.alive) # A: false
+
+
+######################################## Q10 BONUS (shortcuts)
+# Q: What does this program print out?
+
+header = 
+	text:"Mike"
+	visible:false
+
+
+print masthead.visible 	#A: false
+
+
+
+########################################
+######################################## BONUS
+########################################
+# Rewrite the objects and functions in this file using shorthand.
+
+
+	######################################## Q1
+	# Create an object with x and y properties, each with the value 0, and assign the object to the variable box.
+
+	box =
+		x:0
+		y:0
+
+	######################################## Q2
+	# Create a variable 'block' and assign to it an object with no properties
+	# Aftwards, add two properties to it, width and height, each set to 10
+
+	block = {}				
+	block.width = 10
+	block.height = 10
+
+
+	######################################## Q3
+	# Write code that makes the output match what's described.
+
+	jonSnow = 
+		knowledge:"nothing"
+
+	print jonSnow.knowledge  	#  "nothing"
+
+
+	######################################## Q4
+	# Q: What does this program print out?
+
+	dragon = 
+		name:"Trogdor"
+
+	print dragon.name	# A: "Trogdor"
+
+
+	######################################## Q5
+	# Q: What does this program print out?
+
+	robot = 
+		name:"R2D2"
+	robot.name = "C3PO"
+	print robot.name	# A: "C3PO"
+
+
+	######################################## Q6
+	# Q: What does this program print out?
+
+	wand =
+		name:"Elder"
+		owner:"Potter"
+		length:15
+
+	print wand.owner  # A: "Potter"
+
+
+	######################################## Q7
+	# Q: What does this program print out?
+
+	name = "Bob"
+
+	guy1 = 
+		name:"Ralf"
+	guy2 = 
+		name:"Sam"
+
+	print name  # A: "Bob"
+
+
+	######################################## Q8
+	# Create an object with three property value pairs, 
+	# where one of the values is another object with two property value pairs.
+	# (Your choice of names and values.) 
+
+	file =
+		name:"Norman1.pdf"
+		lastEdited:"1/10/2017"
+		container:
+			name:"Documents"
+			lastEdited:"1/10/2017"
+
+
+	# OR
+
+	file =
+		name:"Norman1.pdf"
+		lastEdited:"1/10/2017"
+		container:{name:"Documents",lastEdited:"1/10/2017"}
+
+
+	######################################## Q9 BONUS (references)
+	# Q: What does this program print out?
+
+	Agent = 
+		name:"Eddie"
+		alive:true
+
+	DoubleAgent = Agent
+	Agent.alive = false
+
+	print DoubleAgent.alive # A: false

@@ -2,6 +2,8 @@
 
 	Quiz-Objects
 	
+	You may answer using shorthand if you like
+
 ###
 
 
@@ -13,7 +15,7 @@
 
 ######################################## Q2
 # Create a variable 'block' and assign to it an object with no properties
-# Aftwareds, add two properties to it, width and height, each set to 10
+# Afterwards, add two properties to it, width and height, each set to 10
 
 
 ######################################## Q3
@@ -21,7 +23,7 @@
 
 # (code here)
 
-print jonSnow.knowledge  	#  "nothing"
+print(jonSnow.knowledge)  	#  "nothing"
 
 
 
@@ -29,7 +31,7 @@ print jonSnow.knowledge  	#  "nothing"
 # Q: What does this program print out?
 
 dragon = {name:"Trogdor"}
-print dragon.name	# A:
+print(dragon.name)	# A:
 
 
 ######################################## Q5
@@ -37,36 +39,18 @@ print dragon.name	# A:
 
 robot = {name:"R2D2"}
 robot.name = "C3PO"
-print robot.name	# A:
-
+print(robot.name)	# A:
 
 
 ######################################## Q6
 # Q: What does this program print out?
 
-wand =
-	name:"Elder"
-	owner:"Potter"
-	length:15
+wand = {name:"Elder",owner:"Potter",length:15}
 
-print wand.owner # A:
+print(wand.owner) # A:
 
 
 ######################################## Q7
-# Q: What does this program print out?
-
-Agent = 
-	name:"Eddie"
-	alive:true
-
-DoubleAgent = Agent
-Agent.alive = false
-
-print DoubleAgent.alive # A: 
-
-
-
-######################################## Q8
 # Q: What does this program print out?
 
 name = "Bob"
@@ -74,14 +58,42 @@ name = "Bob"
 guy1 = {name:"Ralf"}
 guy2 = {name:"Sam"}
 
-print name
+print(name)
 
 
-######################################## Q9
+######################################## Q8
 # Create an object with three property value pairs, 
 # where one of the values is another object with it's own three property value pairs.
 # (Your choice of names and values.) 
 
+
+
+######################################## Q9 BONUS (references)
+# Q: What does this program print out?
+
+Agent = {name:"Eddie",alive:true}
+
+DoubleAgent = Agent
+Agent.alive = false
+
+print(DoubleAgent.alive) # A: 
+
+
+######################################## Q10 BONUS (shortcuts)
+# Q: What does this program print out?
+
+header = 
+	text:"Mike"
+	visible:false
+
+
+print masthead.visible 	#A: ???
+
+
+########################################
+######################################## BONUS
+########################################
+# Rewrite the objects and functions in this file using shorthand. 
 
 
 

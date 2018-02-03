@@ -15,45 +15,46 @@
 ###
 
 ######################## P1
-# Some math operators don't produce numbers, they produce true or false. "Boolean" values.
-# These kinds of operators are called "comparison operators". 
+# Some math operators don't produce numbers, they produce true or false: Boolean values.
+# These kinds of operators are called 'comparison operators'. 
 # We can use comparison operators to ask questions like 'is a more than b?'
 
-print 1 < 2		# Is 1 less than 2?
-print 1 > 2		# Is 1 greater than 2?
+print(1 < 2)		# Is 1 less than 2?
+print(1 > 2)		# Is 1 greater than 2?
 
-print 1 == 2	# Is 1 equivalent to 2?				
-				# Note: The double equal "equivalence" operator is COMPLETELY DIFFERENT than the single equal "assignment" operator.
+print(1 == 2)	# Is 1 equivalent to 2?				
+				# Note: The double equal 'equivalence' operator is COMPLETELY DIFFERENT than the single equal 'assignment' operator.
 				# Mixing up the assignment and the equivalence operators is a very common early mistake, so keep an eye out.
 
-print 1 = 2     # Intentional typo. 
+print(1 = 2)    # ERROR. 
 				# The mistake is using the assignment operator = instead of comparison operator ==. 
-				# This will cause an error in most places. 
+				# We can't assign the data 2 to the number 1, so we get an error.
+				# Again, mixing up = and == is a common mistake.
 
 
 
 ######################## P2
 # Remember Functions?
-# Functions are a kind of "flow control" statement; they move the execution (or the flow) of the program to a different part of the code. 
-# Another kind of flow control statement is a "conditional statement". 
+# Functions are a kind of 'flow control' statement; they move the execution (or the flow) of the program to a different part of the code. 
+# Another kind of flow control statement is a 'conditional statement'. 
 # The most common kind of conditional statement is the 'if' statement.
-# The if statement includes the if "keyword", the "expression" to check, and the "body" of code that may or may not be run
+# The if statement includes the if 'keyword', the 'expression' to check, and the 'body' of code that may or may not be run
 
-if true				# The "expression" after the 'if' can be anything (operations, variables, function calls) that resolve to true or false. 
-	print "I run"	
+if true				# The 'expression' after the 'if' can be anything (operations, variables, function calls) that resolve to true or false. 
+	print("I run")	
 
 if false			# We never write a raw boolean value in an if statement, but the expression must always resolve to a single boolean value.  
-	print "Skip"
+	print("Skip")
 
 if 1<2					# 'if 1<2' resolves to 'if true'...
-	print "I also run"	# ... and the code in the "body" will run.	
+	print("I also run")	# ... and the code in the 'body' will run.	
 
 if 1>2 					# 'if 1>2' Resolves to 'if false' and so the body will not run.
-	print "Skip"
+	print("Skip")
 
 
 if (1+20)<(20*20)  # Here, the normal math is done first, which resolves to 'if 21 < 400' which resolves to 'if true'. 
-	print "I run after math."
+	print("I run after math.")
 
 ######################## P3
 # You can use variables as part of a comparison expression.
@@ -62,7 +63,7 @@ stay = 48
 leave = 52
 
 if leave > stay
-	print "Brexit!"
+	print("Brexit!")
 
 
 ######################## P4
@@ -70,9 +71,9 @@ if leave > stay
 # Run this program multiple times and note the different results.
 
 if Math.random() > 0.5 		# Note: Math.random() returns a value between 0 and 1. This resolves to something like 'if 0.129420 > 0.5' and then the comparison is made. 
-	print "I got lucky!"	
+	print("I got lucky!")
 
-print "done"
+print("done")
 
 
 ######################## P5
@@ -81,7 +82,7 @@ print "done"
 month = 5				# Imagine we got this number from the computer's clock. 
 						# Note: In programming we almost always start counting at 0. 
 isJune = month == 5     # You can think of this line 'isJune = (month == 5)' which becomes 'isJune = true'
-print "Is June? " + isJune
+print("Is June? " + isJune)
 
 
 ######################## P6
@@ -91,7 +92,7 @@ print "Is June? " + isJune
 sick = false
 
 if sick == false				
-	print "Lets ride bikes!"
+	print("Lets ride bikes!")
 
 
 ######################## P7
@@ -100,7 +101,7 @@ if sick == false
 healthy = true
 
 if healthy == true						# We can just write 'if healthy'
-	print "Lets ride bikes!"
+	print("Lets ride bikes!")
 
 
 ######################## P8
@@ -109,7 +110,7 @@ if healthy == true						# We can just write 'if healthy'
 hungry = Math.random() > 0.5  	# The expression here will resolve to true or false, and that result will be assigned to the variable hungry
 
 if hungry						# Here, there is no need to write 'if hungry == true'
-	print "Feed me!"
+	print("Feed me!")
 
 
 ######################## P9
@@ -119,7 +120,7 @@ name1 = "Sam"
 name2 = "Sam"
 
 if name1 == name2
-	print "Name twins!"
+	print("Name twins!")
 
 
 
@@ -130,7 +131,7 @@ flavor = "vanilia"
 myFavorite = "chocolate"
 
 if flavor != myFavorite
-	print "Do not want."
+	print("Do not want.")
 
 
 
@@ -143,7 +144,7 @@ isNoon = true
 
 if hungry						# If hungry is true, go into the body, otherwise skip the next two lines
 	if isNoon					# If isNoon is true, go to the body, otherwise skip the next line. 
-		print "Time to eat!"	# If one of either of the variables is false, the program will not reach this line
+		print("Time to eat!")	# If one of either of the variables is false, the program will not reach this line
 								# Note the indentation.
 
 
@@ -159,11 +160,11 @@ if hungry						# If hungry is true, go into the body, otherwise skip the next tw
 
 
 if 0.5 < Math.random()
-	print "win"				# Sometimes this code runs.
+	print("win")			# Sometimes this code runs.
 else			
-	print "loose"			# Sometimes this code runs.
+	print("loose")			# Sometimes this code runs.
 
-print "done."				# This code always runs.
+print("done.")				# This code always runs.
 							# Run this program multiple times to see different results.
 
 
@@ -183,13 +184,13 @@ else
 spotted = "wildlings"					# Try changing this to other strings. 
 
 if spotted == "friend"					
-	print ("TOOT")
+	print("TOOT")
 else if spotted == "wildlings"			# Note that this is 'else if'	
-	print ("TOOT TOOT")
+	print("TOOT TOOT")
 else if spotted == "white walkers"		# You can have as many 'else if's as you'd like
-	print ("TOOT! TOOT! TOOT!")			
+	print("TOOT! TOOT! TOOT!")			
 else									# if the first 'if' and the following 'else if' expressions are false.
-	print ("...")						# the 'else' code will run by default. 										
+	print("...")						# the 'else' code will run by default. 										
 										# There can be no more than one 'else' because there can no more than one default.
 										# You are not required to end on else though.
 
@@ -197,7 +198,7 @@ else									# if the first 'if' and the following 'else if' expressions are fal
 ######################## P15
 # We can use variables and conditionals to respond to the same action in different ways. 
 
-b = new Layer
+b = new Layer()
 clicks = 0
 b.onMouseDown ->
 	clicks = clicks + 1
@@ -215,8 +216,7 @@ b.onMouseDown ->
 # A toggle button is a good example of something that 
 # responds in different ways depending on the situation.
 
-toggleButton = new Layer
-	backgroundColor: "gray"
+toggleButton = new Layer({backgroundColor: "gray"})
 	
 selected = false
 

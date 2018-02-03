@@ -13,14 +13,14 @@
 		
 
 # An array is basically a list.
-list = ["a","b","c"] # We use square brackets instead of curly brackets
+list = ["a","b","c"] # We use square brackets instead of curly brackets.
 # Technically, it's another kind of structured data, like an object.
-# But instead of name:value pairs, we have numberd items.
+# But instead of name:value pairs, we have numbered items.
 
 # We can access items in the list like so:
-print(list[0]) # The number in the brackets is the 'index'
-print(list[1]) 
-print(list[2])
+print(list[0]) # "a"	The number in the brackets is called the 'index'.	
+print(list[1]) # "b"
+print(list[2]) # "c"
 
 # Note that index 0 is the first item, 1 is the second, and 2 is the third
 # In almost every language, the first item in a list is item zero.
@@ -57,13 +57,12 @@ c = new Layer
 # Make an array of our layers. PS. we can put any data we want in an array
 list = [a,b,c] 
 
-
 # Below is a "for in" loop.
 # 'For each element in the list, do the indented code'
 for item in list
 	# Each time this indented code runs, the variable 'item' will refer to an element in our array.	
 	# Because our array has three items, this indented code will run three times	
-	print item	# print each item
+	print(item)	# print each item
 	item.rotation = 45	# rotate each item
 	item.onMouseOver -> @animate({scale:1.5})	# add an event listener to each item
 	item.onMouseOut -> @animate({scale:1})	# add another event listener to each item
@@ -81,7 +80,7 @@ for n in [0,1,2,3,4,5,6,7,8,9,10]
 
 ################################# P4
 # In these cases, we don't need to write out the full array of numbers though
-# CoffeeScript has useful shortcut ...
+# CoffeeScript and some other languages have a useful shortcut '...' to express a range of values.
 
 for n in [0...10] # The '...' tells the computer to fill in the values in between 0 and 50
 	new Layer		
@@ -117,7 +116,7 @@ for n in [0...50]
 # In other words
 # Make an empty array. We'll use it to hold layers
 # Do the following 50 times:
-#	make a layer and add it to the layers array
+#	make a layer and add it to the layers array at slot n
 #	when the layer is moused over, do the following:
 #		for every layer in the layer array, do the following:
 #			rotate that layer to 45°

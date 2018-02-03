@@ -7,18 +7,18 @@
 
 
 ######################################## Q1
-# Create a variable named 'box' and assign to it the number 10
+# Create a variable named box and assign to it the number 10
 # The answer should be one line long
 
 
 
 ######################################## Q2
-# Create a 'circle' variable that holds the number 10
+# Create a circle variable that holds the number 10
 # The answer should be one line long
 
 
 ######################################## Q3
-# Assign the String "cat" to the variable 'animal'
+# Assign the String "cat" to the variable animal
 # The answer should be one line long
 
 
@@ -30,17 +30,17 @@
 ######################################## Q5
 # Write code that makes the output match what's described
 
-# (code here)
+# (replace this line with your code)
 
-print snakes	# Output: 13
+print(snakes)	# Output: 13
 
 
 ######################################## Q6 
 # Write code that makes the output match what's described
 
-# (code here)
+# (replace this line with your code)
 
-print dos + dos	# Output: 4
+print(dos + dos)	# Output: 4
 
 
 
@@ -49,7 +49,7 @@ print dos + dos	# Output: 4
 
 cats = 12
 boxes = 12
-print(cats+boxes) # A:
+print(cats+boxes) # A: ???
 
 
 
@@ -58,8 +58,7 @@ print(cats+boxes) # A:
 
 dogs = 12
 cats = dogs
-print(cats+dogs) # A:
-
+print(cats+dogs) # A: ???
 
 
 ######################################## Q9
@@ -69,7 +68,7 @@ mine = 10
 yours = mine
 mine = 1
 
-print(yours) # A: 
+print(yours) # A: ???
 
 
 ######################################## Q10
@@ -79,7 +78,7 @@ x = 10
 y = x + 1
 x = 2
 
-print(x + y) # A: 
+print(x + y) # A: ???
 
 
 ######################################## Q11
@@ -88,4 +87,8 @@ print(x + y) # A:
 start = 1
 one = "1"
 
-print(start + one) # A: 
+print(start + one) # A: ???
+
+
+######################################## BONUS
+# Rewrite the function calls in this document using CoffeeScript's function shorthand.

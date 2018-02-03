@@ -33,7 +33,7 @@ doingFine = true
 
 snakes = 13
 
-print snakes	# Output: 13
+print(snakes)	# Output: 13
 
 
 ######################################## Q6 
@@ -41,7 +41,7 @@ print snakes	# Output: 13
 
 dos = 2
 
-print dos + dos	# Output: 4
+print(dos + dos)	# Output: 4
 
 
 
