@@ -1,4 +1,6 @@
-## Materials for Learning / Teaching CoffeeScript and FramerJS
+## Materials for Learning / Teaching CoffeeScript and Framer [Classic]
+
+[ NOTE: These materials only apply to Framer "Classic", not "Framer X" ]
 
 These materials walk through fundamental programming concepts using CoffeeScript and FramerJS. 
 
